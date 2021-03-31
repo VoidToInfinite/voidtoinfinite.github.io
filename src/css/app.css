@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --background-dark: #1f1f1f;
+    --background-dark-2: #1f1f1f linear-gradient(to bottom, #151515, #1f1f1f);
+    --background-light: #dad4ec;
+    --background-image-light: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    --navbar-height: 8%;
+    --text-light: #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, #151515, #242424);
+}   
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #dad4ec, #242424);
+    border-radius: 60px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top, #dad4ec, #505050);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    position: relative;
+}
+
+.hero-header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.logo{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    height: auto;
+    order:1;
+}
+
+.logo span{
+    font-weight: 300;
+}
+
+.hamburger-menu{
+    width: 1.55rem;
+    height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    order:2;
+}
+
+.navbar{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 5vh !important;
+    padding: 1.5rem 5%;
+    position: fixed;
+    transition: 0.35s;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-item-list {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+
+.navbar-items {
+    display: none;
+    flex-basis: 100%;
+    height: 100%;
+    order:3;
+    padding: 5% 5% 0 5%;
+    width: 15%;
+}
+
+.navbar-item {
+    border-bottom: 0px solid rgba(255, 255, 255,0);
+    padding: 1% 1rem;
+    text-transform: uppercase;
+}
+
+.navbar-item a{
+    text-decoration: none;
+}
+
+.navbar-item-active {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #fd8d31;
+}
+
+.bar{
+    position: relative;
+    width: 1.2rem; 
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.bar:before, .bar:after{
+    content: '';
+    position: absolute;
+    width: 1.55rem;
+    height: 3px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.bar:before{
+    transform: translateY(-8px);
+}
+
+.bar:after{
+    transform: translateY(8px);
+}
+
+.presentation {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: calc(100% - var(--navbar-height));
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    top:0;
+    z-index: 10;
+    width: 100%;
+}
+
+.presentation-title{
+    line-height: 3.8rem;
+    width: 100%;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.presentation-title span{
+    font-weight: 300;
+}
+
+.presentation-lore {
+    padding: 0 10%;
+    position: absolute;
+    top: 30vh;
+    z-index: 1;
+}
+
+.presentation-description {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0 0 1.2rem 0;
+    padding: 1rem 0 0 0;
+}
+
+.presentation-image{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: .1;
+    position: absolute;
+    top: 10vh;
+}
+
+.presentation-image .logo-vti-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    width: 500px;
+}
+
+.presentation-btn {
+    font-weight: bold;
+}
+
+.presentation-btn:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #09203f;
+}
+
+.logo-vti-svg .logo-vti-dot,
+.logo-vti-svg .logo-vti-void,
+.logo-vti-svg .logo-vti-to {
+    transition: 0.3s;
+}
+
+.logo-vti-svg .logo-vti-dot:hover,
+.logo-vti-svg .logo-vti-void:hover,
+.logo-vti-svg .logo-vti-to:hover{
+    -webkit-filter: drop-shadow( 0 10px 15px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow( 0 10px 15px rgba(0, 0, 0, 0.3)); 
+}
+
+.logo-vti-svg .logo-vti-dot:hover{
+    fill: #fff;  
+}
+
+.logo-vti-svg .logo-vti-void:hover{
+    fill: #fff;  
+}
+
+.logo-vti-svg .logo-vti-to:hover{
+    fill: #fff;  
+}
+
+.about{
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-items: center;
+
+    background: var(--background-dark-2);
+    padding: 5% 10% 15% 10%;
+    position: relative;
+    width: 100%;
+}
+
+.about .about-title {
+    line-height: 5.5rem;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about .about-title-separator {
+    height: 2px;
+    max-width: 80%;
+    width: 0%;
+    background-color: #fff;
+}
+
+.about .about-description {
+    margin: 5% 0%;
+    padding: 5% 1%;
+    text-align: justify;
+}
+
+.about .about-section {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-flow: column;
+    height: auto;
+    padding: 1% 0 5% 0;
+}
+
+.about .about-section .card-flex {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-row-gap: 2%;
+    height: auto;
+    width: 100%;
+}
+
+.about .about-section .card-flex .card {
+    border: 1px solid #1b1c1e;
+    border-image-slice: 1;
+    border-width: 1px;
+    min-height: 300px;
+    overflow: hidden;
+    padding: 0;
+    width: 300px;
+}
+
+.about .about-section .card-flex .card .card-image {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+}
+.about .about-section .card-flex .card .card-image img  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .about-section .card-flex .card:nth-of-type(1),
+.about .about-section .card-flex .card:nth-of-type(1) .card-image {
+    border-image-source: linear-gradient(to top, #743ad5, #d53a9d);
+}
+
+.about .about-section .card-flex .card:nth-of-type(2),
+.about .about-section .card-flex .card:nth-of-type(2) .card-image {
+    border-image-source: linear-gradient(to top, #3a3cd5, #743ad5);
+}
+
+.about .about-section .card-flex .card:nth-of-type(3),
+.about .about-section .card-flex .card:nth-of-type(3) .card-image {
+    border-image-source: linear-gradient(to top, #3ab6d5, #3a3cd5);
+}
+
+.about .about-section .card-flex .card .card-title {
+    font-size: 1.5rem;
+    padding: .5rem 1rem 0rem;
+}
+
+.about .about-section .card-flex .card .card-subtitle {
+    font-size:  1rem;
+    font-weight: 300;
+    padding: .2rem 1rem .5rem 1rem;
+}
+
+.about .about-section .card-flex .card .card-text {
+    text-align: justify;
+    font-size:  .90rem;
+    line-height: 1.3rem;
+    padding: 1rem;
+}
+
+.sec-contact {
+    background-image: var(--background-image-light);
+    padding: 5% 10%;
+    position: relative;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-items: center;
+}
+
+.sec-contact .sec-contact-presentation .sec-contact-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.sec-contact .sec-contact-presentation .sec-contact-text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-align: justify;
+    padding: 10%;
+    width: 100%;
+}
+
+.sec-contact .sec-contact-social {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    align-content: center;
+    justify-items: center;
+    height: 100px;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.sec-contact .sec-contact-social a,
+.sec-contact .sec-contact-social a picture img {
+    height: 50px;
+    width: 50px;
+}
+
+.sec-contact .discord-app {
+    width: auto;
+}
+
+.sec-contact .discord-app iframe {
+    height: 45vh;
+}
+
+.footer {
+    background: #dad4ec;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.footer p{
+    color: #868686;
+    font-weight: 300;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px;
+    width: 150px;
+}
+
+.btn:hover {
+    cursor: pointer; 
+}
+
+.btn:focus {
+    outline: 0 none;
+}
+
+.display-none {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.active:hover {
+    text-shadow: 0 -40px 150px rgba(229, 178, 202,1), 0 0 80px 10px rgba(112, 40, 228, 0.5);
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.soft-shadow {
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.1);
+}
+
+.text-light {
+    color: #fff;
+}
+
+.shadowToAbout{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    max-height: 700px;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+.shadowToContact{
+    height: 0;
+    border: 25px solid transparent;
+    border-bottom-color: #f3e7e9;
+    bottom: 99.99%;
+    left: 50;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+}
+
+.navbar-scroll-style-light {
+    background: rgba( 255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1rem 5% !important;
+    height: auto;
+}
+
+.navbar-scroll-style-dark {
+    background: rgba( 0, 0, 0, 0.50);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1rem 5% !important;
+    height: auto;
+}
+
+.toTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: rgba( 0, 0, 0, 0.4 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    border-radius: 50%;
+    bottom: 2.5%;
+    right: 2.5%;
+    position: fixed;
+    height: 5vh;
+    width: 5vh;
+    z-index: 10;
+}
+
+.toTop:hover {
+    cursor: pointer;
+}
+
+.toTop p {
+    color: #fff;
+    font-size: 1.8em;
+}
+
+@media screen and (min-width: 320px) {
+
+    .presentation-lore{
+        top: 30vh;
+    }
+
+    .presentation-title{
+        line-height: 3.5rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .presentation-description {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        margin: 0 0 1.2rem 0;
+        padding: 1rem 0 0 0;
+    }
+
+    .presentation-image{
+        top: 12.5vh;
+    }
+
+    .sec-contact .sec-contact-presentation .sec-contact-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 4.5rem;
+    }
+    
+    .sec-contact .sec-contact-presentation .sec-contact-text {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .sec-contact .discord-app iframe {
+        height: 50vh;
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+
+    .presentation-title{
+        line-height: 4.5rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    
+    .presentation-title span{
+        font-weight: 300;
+    }
+    
+    .presentation-description {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .about .about-section .card-flex .card {
+        height: 400px;
+        width: 450px;
+        margin: 2.5%;
+    }
+
+    .about .about-section .card-flex .card .card-title {
+        font-size: 2rem;
+        padding: .5rem 1rem 0rem;
+    }
+    
+    .about .about-section .card-flex .card .card-subtitle {
+        font-size:  1.5rem;
+        font-weight: 300;
+        padding: .2rem 1rem .5rem 1rem;
+    }
+    
+    .about .about-section .card-flex .card .card-text {
+        font-size:  1rem;
+        font-weight: 300;
+        line-height: 1.7rem;
+    }
+
+    .sec-contact .sec-contact-presentation .sec-contact-title {
+        font-size: 4.5rem;
+        font-weight: 600;
+        line-height: 4.5rem;
+    }
+    
+    .sec-contact .sec-contact-presentation .sec-contact-text {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    
+    .sec-contact .sec-contact-social {
+        width: 50%;
+    }
+
+    .sec-contact .discord-app {
+        width: auto;
+    }
+    
+    .sec-contact .discord-app iframe {
+        height: 45vh;
+        width: 45vh;
+    }
+
+    .btn {
+        color: #fff;
+        font-size: 18px;
+        padding: 16px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .navbar-items {
+        padding: 1% 5%;
+    }
+
+    .presentation-title{
+        line-height: 5.5rem;
+        font-size: 4.5rem;
+    }
+    
+    .presentation-description {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .presentation-image{
+        top: 10vh;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .about  {
+        padding: 5% 5%;
+    }
+
+    .about .about-description {
+        font-size: 1.2rem;
+        font-weight: 200;
+        margin: 2% 10%;
+    }
+
+    .about .about-section .card-flex {
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 1% 0 ;
+        width: 100%;
+    }
+
+    .about .about-section .card-flex .card {
+        height: 400px;
+        width: 350px;
+        margin: 2.5%;
+    }
+
+    .about .about-section .card-flex .card:nth-of-type(2) .card-image {
+        height: 180px;
+    }
+
+    .sec-contact {
+        align-items: center;
+        grid-column-gap: 5%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .sec-contact .sec-contact-title {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .sec-contact .sec-contact-presentation {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .sec-contact .sec-contact-presentation .sec-contact-text {
+        padding: 5%;
+    }
+
+    .sec-contact .sec-contact-social {
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+        margin: 0;
+    }
+    
+    .sec-contact .discord-app {
+        grid-column: 2 / 3;
+        grid-row: 2 / 5;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .logo{
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .logo {
+        align-self: center;
+        flex-basis: auto;
+    }
+
+    .navbar{
+        flex-flow: row;
+        justify-content: left;
+        padding: 2rem 5%;
+    }
+
+    .navbar-item-list {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+    }
+
+    .navbar-items {
+        flex-basis: 30%;
+        display: flex;
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    .presentation {
+        flex-flow: row;
+        justify-content: space-between;
+        padding: 0 5%;
+        position: relative;
+    }
+
+    .presentation-lore{
+        padding: 0;
+        position: relative;
+        top: 0;
+    }
+
+    .presentation-title{
+        color: #a2c1da;
+        font-size: 6.5em;
+        line-height: 7.5rem;
+    }
+
+    .presentation-title span{
+        font-size: 6.5rem;
+    }
+
+    .presentation-description {
+        padding: 1rem 0;
+    }
+
+    .presentation-image{
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+
+    .about .about-section {
+        width: 100%;
+    }
+
+    .about .about-section .card-flex {
+        align-items: center;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-column-gap: 2.5%;
+        justify-items: center;
+        margin: 0;
+        padding: 1% 0 ;
+        width: 100%;
+    }
+
+    .about .about-section .card-flex .card {
+        height: 400px;
+        width: 350px;
+    }
+
+    .about .about-section .card-flex .card .card-title {
+        font-size: 2.1rem;
+    }
+    
+    .about .about-section .card-flex .card .card-subtitle {
+        font-size:  1.15rem;
+        font-weight: 300;
+    }
+    
+    .about .about-section .card-flex .card .card-text {
+        font-size:  1rem;
+        line-height: 1.7rem;
+    }
+
+    .about .about-section .card-flex .card:nth-of-type(1),
+    .about .about-section .card-flex .card:nth-of-type(1) .card-image {
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    }
+
+    .about .about-section .card-flex .card:nth-of-type(2),
+    .about .about-section .card-flex .card:nth-of-type(2) .card-image {
+        border-image-source: linear-gradient(to left, #3a3cd5, #743ad5);
+    }
+
+    .about .about-section .card-flex .card:nth-of-type(3),
+    .about .about-section .card-flex .card:nth-of-type(3) .card-image {
+        border-image-source: linear-gradient(to left, #3ab6d5, #3a3cd5);
+    }
+
+    .shadowToContact{
+        position: absolute;
+        height: 10vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background: #3D5A80;
+    }
+
+    .sec-contact {
+        align-items: center;
+        grid-column-gap: 5%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sec-contact .sec-contact-presentation {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        min-height: 200px;
+    }
+
+    .sec-contact .sec-contact-presentation .sec-contact-text {
+        padding: 5% 10%;
+    }
+
+    .sec-contact .sec-contact-social {
+        margin: 0;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .sec-contact .discord-app {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .sec-contact .discord-app iframe {
+        height: 50vh;
+        width: 400px;
+    }
+
+}

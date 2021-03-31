@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="src/css/app.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <!-- TITLE -->
+    <title>VoidToInfinite</title>
+</head>
+<body>
+    <div class="app" id="app">
+        <!-- HEADER HERO PRESENTATION -->
+        <header class="hero-header">
+            <!-- HEADER NAVIGATOR -->
+            <nav class="navbar">
+                <a class="logo text-light" href="index.html">Void<span>To</span>Infinite</a>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+                <div class="navbar-items">
+                    <ul  class="navbar-item-list">
+                        <li class="navbar-item">
+                            <a class="text-light" id="home">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="text-light" id="about">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="text-light" id="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- HEADER FIRST VISUALITATION -->
+            <div class="presentation translate" id="presentation">
+                <div class="presentation-lore">
+                    <h1 class="presentation-title text-light translate" data-speed="0.1">
+                        <span class="text-light">Hello!</span>
+                        <br>
+                        <span class="text-light">We are</span>
+                        <br>
+                        VoidToInfinite
+                    </h1>
+                    <p class="presentation-description text-light">
+                        Currently your present is your future, only your future must continue to define it.
+                    </p>
+                    <button class="btn presentation-btn">Join us</button>
+                </div>
+                <div class="presentation-image translate" data-speed="-0.2">
+                    <picture>
+                        <source srcset="src/img/vtilogoconcept.svg" type="image/svg">
+                        <svg class="logo-vti-svg" width="500" height="550" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <circle class="logo-vti-dot" cx="calc(100% / 2)" cy="75" r="50" stroke="#fff" fill="transparent" stroke-width="2"/>
+                                <polyline class="logo-vti-void" stroke="#fff" fill="transparent" stroke-width="2" 
+                                    points="10,75 250,540 490,75 440,75 250,460 60,75 10,75 250,540"/>
+                                <polyline class="logo-vti-to" stroke="#fff" fill="transparent" stroke-width="2" 
+                                    points="110,140 145,210 210,210 250,400 290,210 355,210 390,140 110,140 130,180"/>
+                            </g>
+                        </svg>
+                    </picture>
+                </div>
+            </div>
+        </header>
+        <!-- ABOUT  -->
+        <main class="about" id="about">
+            <div class="shadowToAbout"></div>
+            <div class="about-section">
+                <p class="about-title text-light">About</p>
+                <div class="about-title-separator"></div>
+                <p class="about-description text-light">We're a team with members in different types of fields with the idea of growing together by sharing knowledge and creating projects.</p>
+                <section class="card-flex">
+                    <article class="card soft-shadow">
+                        <div class="card-image">
+                            <img src="src/img/vtilearning.jpg" alt="VoidToInfinite Learning" title="VTI Learning">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title text-light"></h2>
+                            <h3 class="card-subtitle text-light"></h3>
+                            <p class="card-text text-light"></p>
+                        </div>
+                    </article>
+                    <article class="card soft-shadow">
+                        <div class="card-image">
+                            <img src="src/img/vtiimagination.jpg" alt="VoidToInfinite Imagination" title="VTI Imagination">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title text-light"></h2>
+                            <h3 class="card-subtitle text-light"></h3>
+                            <p class="card-text text-light"></p>
+                        </div>
+                    </article>
+                    <article class="card soft-shadow" >
+                        <div class="card-image">
+                            <img src="src/img/vtigaming.jpg" alt="VoidToInfinite Gaming" title="VTI Gaming">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title text-light"></h2>
+                            <h3 class="card-subtitle text-light"></h3>
+                            <p class="card-text text-light"></p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <!-- CONTACT -->
+        <section class="sec-contact" id="secContact">
+            <div class="shadowToContact"></div>
+            <article class="sec-contact-presentation">
+                <h2 class="sec-contact-title">Contact us</h2>
+                <p class="sec-contact-text">At the moment, we only have our Discord server. You can also follow our GitHub projects.</p>
+            </article>
+            <article class="sec-contact-social">
+                <a href="https://github.com/VoidToInfinite" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                        <source srcset="src/img/vtilogoconcept.svg" type="image/svg">
+                        <img src="src/img/github.svg" alt="Logo de GitHub" title="GitHub"/>
+                    </picture>
+                </a>
+                <a href="https://discord.gg/CuGhqdG3g3" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                        <source srcset="src/img/vtilogoconcept.svg" type="image/svg">
+                        <img src="src/img/discord.svg" alt="Logo de Discord" title="Discord">
+                    </picture>
+                </a>
+            </article>
+            <article class="discord-app">
+                <iframe src="https://discord.com/widget?id=789793154341666817&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </article>
+        </section>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>VoidToInfinite &#169; 2021</p>
+        </footer>
+        <!-- FLOAT BUTTON TO TOP -->
+        <div class="toTop soft-shadow display-none">
+            <p>&#8673;</p>
+        </div>
+    </div>
+    <!-- JS WEBSITE SCRIPT -->
+    <script src="src/js/app.js" async></script>
+</body>
+</html>
