@@ -1,7 +1,7 @@
 // 
 // Global variables
 // 
-var isNavOpen = false;
+let isNavOpen = false;
 // 
 // HTML elements
 // 
@@ -68,54 +68,38 @@ window.addEventListener('load', () => {
         element.children[2].innerHTML = dataCards.cards[index].description;
     }
 
-    async function scrollToAbout() {
-        window.scrollTo({
-            top: about.offsetTop
-        });
-    }
-
-    async function scrollToContactSection() {
-        window.scrollTo({
-            top: contactSection.offsetTop
-        });
-    }
-
-    async function scrollToTop() {
-        window.scrollTo({
-            top: 0
-        });
-    }
-
-});
-// 
-// Window scroll event
-// 
-window.addEventListener('scroll', () => {
-    let scroll = window.pageYOffset;
-    let aboutY = about.getBoundingClientRect();
-
-    translate.forEach(element => {
-        let speed = element.dataset.speed;
-        element.style.transform = `translateY(${scroll * speed}px)`;
+    // 
+    // Window resize event
+    // 
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1200) {
+            isNavOpen = false;
+        }
     });
-    
-    presentationTitle.style.opacity = - scroll / (header_height / 2) + 1;
-    shadowToAbout.style.height = `${scroll * 0.5 + 300}px`;
 
-    aboutSeparator.style.width = `${scroll / (aboutY.top + about_height) * 50}%`;
-    
-    checkScrollPosition();
+    // 
+    // Window scroll event
+    // 
+    window.addEventListener('scroll', () => {
+        let scroll = window.pageYOffset;
+        let aboutY = about.getBoundingClientRect();
+
+        translate.forEach(element => {
+            let speed = element.dataset.speed;
+            element.style.transform = `translateY(${scroll * speed}px)`;
+        });
+        
+        presentationTitle.style.opacity = - scroll / (header_height / 2) + 1;
+        
+        shadowToAbout.style.height = `${scroll * 0.5 + 300}px`;
+
+        aboutSeparator.style.width = `${scroll / (aboutY.top + about_height) * 30}%`;
+        
+        checkScrollPosition();
+
+    });
 
 });
-// 
-// Window resize event
-// 
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 1200) {
-        isNavOpen = false;
-    }
-});
-
 // 
 // Function to check if 
 // 
@@ -136,5 +120,23 @@ const checkScrollPosition = async () => {
         navbar.classList.add('navbar-scroll-style-dark');
     }
 }
+// 
+// Function to scroll behavior
+// 
+const scrollToTop = async () => {
+    window.scrollTo({
+        top: 0
+    });
+}
 
+const scrollToAbout = async () => {
+    window.scrollTo({
+        top: about.offsetTop
+    });
+}
 
+const scrollToContactSection = async () => {
+    window.scrollTo({
+        top: contactSection.offsetTop
+    });
+}
