@@ -1,160 +1,238 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- META CHARSET -->
-    <meta charset="UTF-8">
-    <!-- META VIEWPORT -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS STYLE -->
-    <link rel="stylesheet" href="src/css/app.css">
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
-    <!-- META DESCRIPTION -->
-    <meta name="description" content="First portofolio by VoidToInfinite to show what thinks we can do.">
-    <!-- META KEYWORDS -->
-    <meta name="keywords" content="VTI, VTI Learning, VTI Project, VTI Imagination, VTI Gaming, VoidToInfinite Learning, VoidToInfinite Imagination, VoidToInfinite Gaming, Learn Css3, Learn Css, Learn Html, Learn Html5, Learn Vanilla JS, Learn JavaScript, Learn Js, Portofolio, Team Project">
-    <!-- META AUTHOR -->
-    <meta name="author" content="VoidToInfinite Team">
-    <!-- TITLE -->
-    <title>VoidToInfinite Portofolio - VoidToInfinite Project</title>
-</head>
-<body>
-    <div class="app" id="app">
-        <!-- HEADER HERO PRESENTATION -->
-        <header class="hero-header">
-            <!-- HEADER NAVIGATOR -->
-            <nav class="navbar">
-                <a class="logo text-light" href="index.html">Void<span>To</span>Infinite</a>
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                </div>
-                <div class="navbar-items">
-                    <ul  class="navbar-item-list">
-                        <li class="navbar-item">
-                            <a class="text-light" id="home">Home</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="text-light" id="about">About</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="text-light" id="contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- HEADER FIRST VISUALITATION -->
-            <div class="presentation translate" id="presentation">
-                <div class="presentation-lore">
-                    <h1 class="presentation-title text-light translate" data-speed="0.1">
-                        <span class="text-light">Hello!</span>
-                        <br>
-                        <span class="text-light">We are</span>
-                        <br>
-                        VoidToInfinite
-                    </h1>
-                    <p class="presentation-description text-light">
-                        Currently your present is your future, only your future must continue to define it.
-                    </p>
-                    <button class="btn presentation-btn">Join us</button>
-                </div>
-                <div class="presentation-image translate" data-speed="-0.2">
-                    <picture>
-                        <source srcset="src/img/vtilogoconcept.svg" type="image/svg">
-                        <svg class="logo-vti-svg" width="500" height="550" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <circle class="logo-vti-dot" cx="calc(100% / 2)" cy="75" r="50" stroke="#fff" fill="transparent" stroke-width="2"/>
-                                <polyline class="logo-vti-void" stroke="#fff" fill="transparent" stroke-width="2" 
-                                    points="10,75 250,540 490,75 440,75 250,460 60,75 10,75 250,540"/>
-                                <polyline class="logo-vti-to" stroke="#fff" fill="transparent" stroke-width="2" 
-                                    points="110,140 145,210 210,210 250,400 290,210 355,210 390,140 110,140 130,180"/>
-                            </g>
-                        </svg>
-                    </picture>
-                </div>
-            </div>
-        </header>
-        <!-- ABOUT  -->
-        <main class="about" id="about">
-            <div class="shadowToAbout"></div>
-            <div class="about-section">
-                <p class="about-title text-light">About</p>
-                <div class="about-title-separator"></div>
-                <p class="about-description text-light">We're a team with members in different types of fields with the idea of growing together by sharing knowledge and creating projects.</p>
-                <section class="card-flex">
-                    <article class="card soft-shadow">
-                        <div class="card-image">
-                            <img src="src/img/vtilearning.jpg" alt="VoidToInfinite Learning image of desk" title="VTI Learning">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title text-light">VTI Learning</h2>
-                            <h3 class="card-subtitle text-light">Increase your knowledge</h3>
-                            <p class="card-text text-light">
-                                Get to know new methods and ways to carry your projects to make them come true, improve your weakness points and strengthen it with the help of experienced people or people that are learning, is more fun.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="card soft-shadow">
-                        <div class="card-image">
-                            <img src="src/img/vtiimagination.jpg" alt="VoidToInfinite Imagination image of drawings made by child" title="VTI Imagination">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title text-light">VTI Imagination</h2>
-                            <h3 class="card-subtitle text-light">Light up your creativity</h3>
-                            <p class="card-text text-light">
-                                Imagine whichever creative concept taken from within you expresing emotions, spawning new sensations and visualising the message, it's something unique.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="card soft-shadow" >
-                        <div class="card-image">
-                            <img src="src/img/vtigaming.jpg" alt="VoidToInfinite Gaming image of setup" title="VTI Gaming">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title text-light">VTI Gaming</h2>
-                            <h3 class="card-subtitle text-light">Good luck! Have fun</h3>
-                            <p class="card-text text-light">
-                                Having fun with friends? Absolutely!<br>We are all aware that we can learn by playing and that's a fact.
-                            </p>
-                        </div>
-                    </article>
-                </section>
-            </div>
-        </main>
-        <!-- CONTACT -->
-        <section class="sec-contact" id="secContact">
-            <div class="shadowToContact"></div>
-            <article class="sec-contact-presentation">
-                <h2 class="sec-contact-title">Contact us</h2>
-                <p class="sec-contact-text">At the moment, we only have our Discord server. You can also follow our GitHub projects.</p>
-            </article>
-            <article class="sec-contact-social">
-                <a href="https://github.com/VoidToInfinite" target="_blank" rel="noopener noreferrer">
-                    <picture>
-                        <source srcset="src/img/vtilogoconcept.svg" type="image/svg">
-                        <img src="src/img/github.svg" alt="Logo de GitHub" title="GitHub"/>
-                    </picture>
-                </a>
-                <a href="https://discord.gg/CuGhqdG3g3" target="_blank" rel="noopener noreferrer">
-                    <picture>
-                        <source srcset="src/img/vtilogoconcept.svg" type="image/svg">
-                        <img src="src/img/discord.svg" alt="Logo de Discord" title="Discord">
-                    </picture>
-                </a>
-            </article>
-            <article class="discord-app">
-                <iframe src="https://discord.com/widget?id=789793154341666817&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-            </article>
-        </section>
-        <!-- FOOTER -->
-        <footer class="footer">
-            <p>VoidToInfinite &#169; 2021</p>
-        </footer>
-        <!-- FLOAT BUTTON TO TOP -->
-        <div class="toTop soft-shadow display-none">
-            <p>&#8673;</p>
-        </div>
-    </div>
-    <!-- JS WEBSITE SCRIPT -->
-    <script src="src/js/app.js" defer></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap"/><link rel="shortcut icon" href="favicon.ico"/><meta name="author" content="VoidToInfinite"/><meta property="og:author" content="VoidToInfinite"/><script src="voidtoinfinite.js" async=""></script><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><title>VoidToInfinite - Voidtoinfinite Project</title><meta name="description" content="First portofolio by VoidToInfinite to show what thinks we can do."/><meta name="keywords" content="VoidToInfinite, VoidToInfinite Portofolio, VoidToInfinite Project, VTI Project, VTI Learning, VTI Imagination, VTI Gaming, VoidToInfinite Learning, VoidToInfinite Imagination, VoidToInfinite Gaming, Portofolio, Team Project"/><meta property="og:title" content="Portofolio- Voidtoinfinite Project"/><meta property="og:description" content="First portofolio by VoidToInfinite to show what thinks we can do."/><meta property="og:keywords" content="VoidToInfinite, VoidToInfinite Portofolio, VoidToInfinite Project, VTI Project, VTI Learning, VTI Imagination, VTI Gaming, VoidToInfinite Learning, VoidToInfinite Imagination, VoidToInfinite Gaming, Portofolio, Team Project"/><meta property="og:url" content="https://voidtoinfinite.github.io"/><meta property="og:type" content="website"/><meta name="next-head-count" content="10"/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"></script><script defer="" src="/_next/static/chunks/327.f0588f2e9d3a436be8c9.js"></script><script defer="" src="/_next/static/chunks/455.5d6fa1190a8ae94c90d9.js"></script><script defer="" src="/_next/static/chunks/137.90bb53bd1c1ff2ce663b.js"></script><script defer="" src="/_next/static/chunks/151.10380e50f661a28051ee.js"></script><script defer="" src="/_next/static/chunks/316.e6a8aa0ad9ba991e40c5.js"></script><script src="/_next/static/chunks/webpack-da4eabef2654b66eec33.js" defer=""></script><script src="/_next/static/chunks/framework-d23658296916ce920464.js" defer=""></script><script src="/_next/static/chunks/main-a3a79aff3ff232b41814.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6c7e94924bedc5ceb011.js" defer=""></script><script src="/_next/static/chunks/207-add2614df41a11df9031.js" defer=""></script><script src="/_next/static/chunks/pages/index-6ab8a8277cbbc9f1c392.js" defer=""></script><script src="/_next/static/DfdYp_gzXhk1Z_QIFtbxv/_buildManifest.js" defer=""></script><script src="/_next/static/DfdYp_gzXhk1Z_QIFtbxv/_ssgManifest.js" defer=""></script><style data-styled="" data-styled-version="5.3.0">html{line-height:1.15;-webkit-text-size-adjust:100%;}/*!sc*/
+body{margin:0;}/*!sc*/
+main{display:block;}/*!sc*/
+h1{font-size:2em;margin:0.67em 0;}/*!sc*/
+hr{box-sizing:content-box;height:0;overflow:visible;}/*!sc*/
+pre{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+a{background-color:transparent;}/*!sc*/
+abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}/*!sc*/
+b,strong{font-weight:bolder;}/*!sc*/
+code,kbd,samp{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+small{font-size:80%;}/*!sc*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}/*!sc*/
+sub{bottom:-0.25em;}/*!sc*/
+sup{top:-0.5em;}/*!sc*/
+img{border-style:none;}/*!sc*/
+button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}/*!sc*/
+button,input{overflow:visible;}/*!sc*/
+button,select{text-transform:none;}/*!sc*/
+button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}/*!sc*/
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}/*!sc*/
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}/*!sc*/
+fieldset{padding:0.35em 0.75em 0.625em;}/*!sc*/
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}/*!sc*/
+progress{vertical-align:baseline;}/*!sc*/
+textarea{overflow:auto;}/*!sc*/
+[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}/*!sc*/
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}/*!sc*/
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}/*!sc*/
+[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}/*!sc*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}/*!sc*/
+details{display:block;}/*!sc*/
+summary{display:list-item;}/*!sc*/
+template{display:none;}/*!sc*/
+[hidden]{display:none;}/*!sc*/
+*{box-sizing:border-box;margin:0;padding:0;}/*!sc*/
+html{-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;-o-scroll-behavior:smooth;-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;}/*!sc*/
+body{background:#242424;color:#ffffff;cursor:default;font-family:Poppins,sans-serif;-webkit-scrollbar-width:thin;-moz-scrollbar-width:thin;-ms-scrollbar-width:thin;-o-scrollbar-width:thin;-webkit-scrollbar-width:thin;-moz-scrollbar-width:thin;-ms-scrollbar-width:thin;scrollbar-width:thin;-webkit-scrollbar-color:#666d7a #ffffff;-moz-scrollbar-color:#666d7a #ffffff;-ms-scrollbar-color:#666d7a #ffffff;-o-scrollbar-color:#666d7a #ffffff;-webkit-scrollbar-color:#666d7a #ffffff;-moz-scrollbar-color:#666d7a #ffffff;-ms-scrollbar-color:#666d7a #ffffff;scrollbar-color:#666d7a #ffffff;}/*!sc*/
+body::-webkit-scrollbar{width:10px;}/*!sc*/
+body::-webkit-scrollbar-track{background:#242424;}/*!sc*/
+body::-webkit-scrollbar-thumb{background-color:#666d7a;border-radius:6px;border:1px solid #666d7a;}/*!sc*/
+a{-webkit-text-decoration:none;text-decoration:none;}/*!sc*/
+li{list-style:none;}/*!sc*/
+.unvisible{display:none;}/*!sc*/
+.sticky--top{background:rgba( 0,0,0,0.30 );-webkit-backdrop-filter:blur( 4.0px );-moz-backdrop-filter:blur( 4.0px );-ms-backdrop-filter:blur( 4.0px );-o-backdrop-filter:blur( 4.0px );-webkit-backdrop-filter:blur( 4.0px );backdrop-filter:blur( 4.0px );box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);border-bottom:1px solid rgba(234,0,255,0.37);padding:1rem !important;}/*!sc*/
+.other-menu--open{bottom:0;}/*!sc*/
+data-styled.g2[id="sc-global-hrzVBV1"]{content:"sc-global-hrzVBV1,"}/*!sc*/
+.clhKxc{top:0;left:0;height:100vh;width:100vw;overflow:hidden;position:fixed;z-index:-6;}/*!sc*/
+.clhKxc:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.01;background-image:url('/images/logo.svg');background-repeat:no-repeat;background-position:49.5% 10px;background-size:contain;z-index:-2;-webkit-transition:1.5s ease all;-moz-transition:1.5s ease all;-ms-transition:1.5s ease all;-o-transition:1.5s ease all;-webkit-transition:1.5s ease all;transition:1.5s ease all;}/*!sc*/
+.clhKxc:after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(14,14,14,0.2);-webkit-backdrop-filter:blur( 8.0px );-moz-backdrop-filter:blur( 8.0px );-ms-backdrop-filter:blur( 8.0px );-o-backdrop-filter:blur( 8.0px );-webkit-backdrop-filter:blur( 8.0px );backdrop-filter:blur( 8.0px );z-index:-1;}/*!sc*/
+@media screen and (min-width:1280px){.clhKxc:before{opacity:0.03;background-position:49.5% 10px;background-size:contain;}}/*!sc*/
+data-styled.g3[id="sc-bdnxRM"]{content:"clhKxc,"}/*!sc*/
+.gfuSqG{border-radius:50%;-webkit-filter:blur(10rem);filter:blur(10rem);height:32rem;position:absolute;width:32rem;}/*!sc*/
+data-styled.g4[id="sc-gtsrHT"]{content:"gfuSqG,"}/*!sc*/
+.dJXsSm{background:rgb(0,183,255);-webkit-backdrop-filter:blur( 8.0px );-moz-backdrop-filter:blur( 8.0px );-ms-backdrop-filter:blur( 8.0px );-o-backdrop-filter:blur( 8.0px );-webkit-backdrop-filter:blur( 8.0px );backdrop-filter:blur( 8.0px );box-shadow:0 2rem 4rem 0 rgb(0,183,255);top:-16rem;left:-16rem;z-index:-4;}/*!sc*/
+data-styled.g5[id="sc-dlnjwi"]{content:"dJXsSm,"}/*!sc*/
+.kksiKu{background:rgb(255,0,0);-webkit-backdrop-filter:blur( 8.0px );-moz-backdrop-filter:blur( 8.0px );-ms-backdrop-filter:blur( 8.0px );-o-backdrop-filter:blur( 8.0px );-webkit-backdrop-filter:blur( 8.0px );backdrop-filter:blur( 8.0px );box-shadow:0 2rem 4rem 0 rgb(255,0,0);bottom:-16rem;right:-16rem;z-index:-5;}/*!sc*/
+data-styled.g6[id="sc-hKFxyN"]{content:"kksiKu,"}/*!sc*/
+.cRjBZT:after{content:"";position:absolute;height:24rem;width:24rem;z-index:6;background:rgb(155,13,211);-webkit-animation:euUAEi 6s infinite;animation:euUAEi 6s infinite;}/*!sc*/
+@media screen and (min-width:768px){.cRjBZT{background:rgb(137,138,192);height:16rem;width:16rem;-webkit-backdrop-filter:blur( 3.0px );-moz-backdrop-filter:blur( 3.0px );-ms-backdrop-filter:blur( 3.0px );-o-backdrop-filter:blur( 3.0px);-webkit-backdrop-filter:blur( 3.0px );backdrop-filter:blur( 3.0px );box-shadow:0 2rem 4rem 0 rgb(155,13,211);position:absolute;top:45vh;left:+16rem;z-index:-3;border-radius:50%;-webkit-filter:blur(8rem);filter:blur(8rem);}}/*!sc*/
+@media screen and (min-width:1280px){.cRjBZT{background:rgb(155,13,211);height:32rem;width:32rem;box-shadow:0 2rem 4rem 0 rgb(155,13,211);position:absolute;top:25vh;left:35vw;z-index:-3;}}/*!sc*/
+data-styled.g7[id="sc-eCApnc"]{content:"cRjBZT,"}/*!sc*/
+.jcTaHb{background-image:linear-gradient(to top,rgba( 0,0,0,0.50 ) 0%,rgba( 0,0,0,0.25 ) 99%,rgba( 0,0,0,0.25 ) 100%);box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);-webkit-backdrop-filter:blur( 4.0px );-moz-backdrop-filter:blur( 4.0px );-ms-backdrop-filter:blur( 4.0px );-o-backdrop-filter:blur( 4.0px );-webkit-backdrop-filter:blur( 4.0px );backdrop-filter:blur( 4.0px );border:1px solid rgba(31,31,31 0.37);border-radius:1.5rem;padding:10vh 10vw;}/*!sc*/
+data-styled.g8[id="sc-jSFjdj"]{content:"jcTaHb,"}/*!sc*/
+.cnXuZQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}/*!sc*/
+@media screen and (min-width:1280px){.cnXuZQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;height:50vh;}}/*!sc*/
+data-styled.g9[id="sc-gKAaRy"]{content:"cnXuZQ,"}/*!sc*/
+.bdrRuQ{height:200px;width:100%;position:relative;}/*!sc*/
+.bdrRuQ img{height:100%;width:100%;object-fit:contain;-webkit-filter:drop-shadow(0 0 10px rgba(0,0,0,0.5));filter:drop-shadow(0 0 10px rgba(0,0,0,0.5));}/*!sc*/
+@media screen and (min-width:1280px){.bdrRuQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;height:100%;}.bdrRuQ img{height:350px;width:500px;object-fit:contain;}}/*!sc*/
+data-styled.g10[id="sc-iCoGMd"]{content:"bdrRuQ,"}/*!sc*/
+.hQgXWd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:4vh 0;}/*!sc*/
+@media screen and (min-width:1280px){.hQgXWd{-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;}}/*!sc*/
+data-styled.g11[id="sc-fujyAs"]{content:"hQgXWd,"}/*!sc*/
+@media screen and (min-width:1280px){.brxOqd div:nth-child(1){-webkit-order:2;-ms-flex-order:2;order:2;}}/*!sc*/
+data-styled.g13[id="sc-jrsJWt"]{content:"brxOqd,"}/*!sc*/
+.IaAPU{background:#666d7a;margin:.5rem 0 0 0;height:.2rem;width:30%;}/*!sc*/
+data-styled.g15[id="sc-iqAclL"]{content:"IaAPU,"}/*!sc*/
+.gctmIo{color:#ffffff;font-size:1.8rem;font-weight:600;margin:0 0 1rem 0;}/*!sc*/
+@media screen and (min-width:1024px){.gctmIo{font-size:2rem;}}/*!sc*/
+@media screen and (min-width:1280px){.gctmIo{font-size:3rem;}}/*!sc*/
+data-styled.g16[id="sc-crzoAE"]{content:"gctmIo,"}/*!sc*/
+.loIyyn{color:#acb1b8;font-size:.8rem;font-weight:400;}/*!sc*/
+@media screen and (min-width:1024px){.loIyyn{font-size:1rem;}}/*!sc*/
+data-styled.g17[id="sc-dIsUp"]{content:"loIyyn,"}/*!sc*/
+.eNQtkq{color:#cfd2d6;font-size:.8rem;line-height:1.5rem;text-align:left;padding:1rem 0;}/*!sc*/
+@media screen and (min-width:1024px){.eNQtkq{font-size:1rem;line-height:2rem;padding:2rem 0;}}/*!sc*/
+data-styled.g18[id="sc-bqGGPW"]{content:"eNQtkq,"}/*!sc*/
+.bVRKfj{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100vh;padding:0 10vw;width:100%;}/*!sc*/
+@media screen and (min-width:1280px){.bVRKfj{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}/*!sc*/
+data-styled.g19[id="sc-ksluID"]{content:"bVRKfj,"}/*!sc*/
+.lmXYQU{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:2rem 0 1rem 0;}/*!sc*/
+@media screen and (min-width:1280px){.lmXYQU{-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;}}/*!sc*/
+data-styled.g20[id="sc-hBMUJo"]{content:"lmXYQU,"}/*!sc*/
+.jGYPdx{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:250px;}/*!sc*/
+.jGYPdx img{height:75%;width:75%;object-fit:contain;-webkit-filter:drop-shadow(0 0 10px rgba(0,0,0,0.5));filter:drop-shadow(0 0 10px rgba(0,0,0,0.5));}/*!sc*/
+@media screen and (min-width:768px){.jGYPdx img{height:100%;width:55%;}}/*!sc*/
+@media screen and (min-width:1280px){.jGYPdx{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;height:100%;}.jGYPdx img{height:400px;width:400px;}}/*!sc*/
+data-styled.g21[id="sc-fnVZcZ"]{content:"jGYPdx,"}/*!sc*/
+.cRSzHN{color:#ffffff;font-size:1.8rem;padding:.5rem 0;}/*!sc*/
+@media screen and (min-width:768px){.cRSzHN{font-size:1.8rem;}}/*!sc*/
+@media screen and (min-width:1280px){.cRSzHN{font-size:3rem;}}/*!sc*/
+data-styled.g22[id="sc-fFSPTT"]{content:"cRSzHN,"}/*!sc*/
+.oBYmt{color:#cfd2d6;font-size:.8rem;line-height:1.5rem;padding:1rem 0;}/*!sc*/
+@media screen and (min-width:768px){.oBYmt{font-size:1rem;line-height:1.9rem;padding:1rem 0;}}/*!sc*/
+data-styled.g23[id="sc-bkbkJK"]{content:"oBYmt,"}/*!sc*/
+.erqzKx{border:1px solid #666d7a;margin:0 0 .5rem 0;width:75%;}/*!sc*/
+data-styled.g24[id="sc-iemWCZ"]{content:"erqzKx,"}/*!sc*/
+.biCrYn{min-height:30vh;padding:10vh 10vw;}/*!sc*/
+data-styled.g25[id="sc-dIvrsQ"]{content:"biCrYn,"}/*!sc*/
+.kqkDzL{border:1px solid #666d7a;margin:0 0 .5rem 0;width:35%;}/*!sc*/
+data-styled.g26[id="sc-hHEiqL"]{content:"kqkDzL,"}/*!sc*/
+.dTvIVy{color:var(--primary-text);font-size:1.8rem;padding:.5rem 0;}/*!sc*/
+@media screen and (min-width:1280px){.dTvIVy{font-size:3rem;}}/*!sc*/
+data-styled.g27[id="sc-dlMDgC"]{content:"dTvIVy,"}/*!sc*/
+.lpaEYv{display:grid;grid-gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));grid-auto-rows:dense;grid-auto-flow:dense;padding:1.5rem 0 .5rem 0;width:100%;}/*!sc*/
+data-styled.g28[id="sc-kfYoZR"]{content:"lpaEYv,"}/*!sc*/
+.cdXrcq{background:rgba(31,31,31,0.6);border:1px solid #666d7a;border-radius:12px;height:auto;min-width:16rem;}/*!sc*/
+.cdXrcq:hover{box-shadow:0 22px 40px rgba(0,0,0,0.3);}/*!sc*/
+.cdXrcq:first-child{background:rgba(234,0,255,0.37);}/*!sc*/
+.cdXrcq:last-child{background:rgba(0,183,255,0.2);}/*!sc*/
+@media screen and (min-width:1280px){.cdXrcq{-webkit-transition:-webkit-transform 1s;-webkit-transition:transform 1s;transition:transform 1s;}.cdXrcq:hover{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px);}}/*!sc*/
+data-styled.g29[id="sc-fKgJPI"]{content:"cdXrcq,"}/*!sc*/
+.dDstpo{display:none;height:200px;width:100%;}/*!sc*/
+@media screen and (min-width:1280px){.dDstpo{display:inline-block;position:relative;}.dDstpo img{border-top-left-radius:10px;border-top-right-radius:10px;height:100%;object-fit:cover;width:100%;}}/*!sc*/
+data-styled.g30[id="sc-bCwfaz"]{content:"dDstpo,"}/*!sc*/
+.kydRHc{padding:1rem;}/*!sc*/
+data-styled.g31[id="sc-iwajpm"]{content:"kydRHc,"}/*!sc*/
+.fHUQtx{min-height:4rem;padding:1rem;}/*!sc*/
+data-styled.g32[id="sc-cxNHIi"]{content:"fHUQtx,"}/*!sc*/
+.hpRDUw{min-height:4rem;padding:1rem;}/*!sc*/
+data-styled.g33[id="sc-lmgQwP"]{content:"hpRDUw,"}/*!sc*/
+.bOBkoa{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:100%;min-height:4rem;padding:1rem;}/*!sc*/
+.bOBkoa a{color:#cfd2d6;-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+.bOBkoa a:hover{color:orange;-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+data-styled.g34[id="sc-iJCRrE"]{content:"bOBkoa,"}/*!sc*/
+.iHJYFU{color:#ffffff;font-size:1.4rem;font-weight:600;}/*!sc*/
+data-styled.g35[id="sc-giAqHp"]{content:"iHJYFU,"}/*!sc*/
+.gJshgS{color:#acb1b8;font-size:.8rem;font-weight:400;margin:0 0 .5rem 0;}/*!sc*/
+data-styled.g36[id="sc-ezzafa"]{content:"gJshgS,"}/*!sc*/
+.bsumis{color:#cfd2d6;font-size:.8rem;font-weight:100;text-align:left;}/*!sc*/
+data-styled.g37[id="sc-bYwzuL"]{content:"bsumis,"}/*!sc*/
+.iehvjW{height:35px;width:35px;}/*!sc*/
+.iehvjW img{height:100%;width:100%;object-fit:contain;-webkit-filter:invert(90%);filter:invert(90%);}/*!sc*/
+data-styled.g38[id="sc-kLojOw"]{content:"iehvjW,"}/*!sc*/
+.jAZWcj{display:grid;grid-gap:1rem;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));grid-auto-rows:dense;grid-auto-flow:dense;grid-row-gap:2rem;min-height:30vh;padding:5vh 10vw;}/*!sc*/
+@media screen and (min-width:640px){}/*!sc*/
+data-styled.g39[id="sc-iklJeh"]{content:"jAZWcj,"}/*!sc*/
+.iHxKCD ul li{padding:.35rem 0;}/*!sc*/
+.iHxKCD ul li a{color:#cfd2d6;font-size:.7rem;}/*!sc*/
+.iHxKCD ul li a:hover{color:var(--primary-text);-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+@media screen and (min-width:768px){.iHxKCD ul li{padding:.2rem 0;}.iHxKCD ul li a{font-size:.8rem;}}/*!sc*/
+data-styled.g40[id="sc-jJMGnK"]{content:"iHxKCD,"}/*!sc*/
+.dRsyqq{grid-column:span 2;}/*!sc*/
+data-styled.g41[id="sc-hiKfDv"]{content:"dRsyqq,"}/*!sc*/
+@media screen and (min-width:1024px){.elXAzt{grid-column:-3;}}/*!sc*/
+data-styled.g42[id="sc-gXfVKN"]{content:"elXAzt,"}/*!sc*/
+@media screen and (min-width:1024px){.iBHoo{grid-column:-2;}}/*!sc*/
+data-styled.g43[id="sc-cBoqAE"]{content:"iBHoo,"}/*!sc*/
+.blYsdO{color:#ffffff;font-size:1rem;font-weight:100;padding:0 0 .5rem 0;}/*!sc*/
+data-styled.g44[id="sc-ciSkZP"]{content:"blYsdO,"}/*!sc*/
+.fowaYY{border:1px solid #666d7a;margin:0 0 .5rem 0;width:75%;}/*!sc*/
+data-styled.g45[id="sc-jcwpoC"]{content:"fowaYY,"}/*!sc*/
+.htVHao{grid-column:1 / -1;color:#ffffff;font-size:.6rem;font-weight:100;text-align:center;padding:2rem 0 0 0;}/*!sc*/
+@media screen and (min-width:768px){.htVHao{font-size:.8rem;}}/*!sc*/
+data-styled.g46[id="sc-carFqZ"]{content:"htVHao,"}/*!sc*/
+.glZmJR{height:100vh;width:100%;z-index:1;}/*!sc*/
+data-styled.g48[id="sc-iBzEeX"]{content:"glZmJR,"}/*!sc*/
+.cFSLxQ{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;position:fixed;min-height:5vh;padding:2rem 1rem 1rem 1rem;-webkit-transition:0.35s;transition:0.35s;width:100%;z-index:200;}/*!sc*/
+data-styled.g49[id="sc-efHYUO"]{content:"cFSLxQ,"}/*!sc*/
+.lmGFyU{-webkit-aling-items:center;-webkit-box-aling:center;-ms-flex-aling:center;aling-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-basis:20%;-ms-flex-preferred-size:20%;flex-basis:20%;}/*!sc*/
+data-styled.g50[id="sc-cTJkRt"]{content:"lmGFyU,"}/*!sc*/
+.jIfccS{border:none;cursor:pointer;background:none;height:30px;width:30px;}/*!sc*/
+.jIfccS:focus,.jIfccS:active{background:none;}/*!sc*/
+data-styled.g51[id="sc-jNnpgg"]{content:"jIfccS,"}/*!sc*/
+.fqbJCS{background-color:#fff;border-radius:2px;height:3px;width:1.3rem;position:relative;}/*!sc*/
+.fqbJCS:before,.fqbJCS:after{content:'';background-color:#fff;height:3px;border-radius:2px;position:absolute;left:0;}/*!sc*/
+.fqbJCS:before{width:1.6rem;-webkit-transform:translateY(-8px);-ms-transform:translateY(-8px);transform:translateY(-8px);}/*!sc*/
+.fqbJCS:after{width:1rem;-webkit-transform:translateY(8px);-ms-transform:translateY(8px);transform:translateY(8px);}/*!sc*/
+data-styled.g52[id="sc-dPaNzc"]{content:"fqbJCS,"}/*!sc*/
+.cdTyhF{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;height:100%;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;list-style:none;width:100%;}/*!sc*/
+data-styled.g53[id="sc-bBjRSN"]{content:"cdTyhF,"}/*!sc*/
+.gnUxyy{cursor:pointer;display:none;}/*!sc*/
+.gnUxyy:hover{padding:.1rem 0 0 0;border-bottom:1px solid rgba( 255,255,255,0.18 );}/*!sc*/
+.gnUxyy:hover a{color:#ecbaff;-webkit-transition:color 1s ease;transition:color 1s ease;}/*!sc*/
+@media screen and (min-width:1280px){.gnUxyy{display:inline-block;text-align:center;margin:0 .5rem;width:6.8rem;border:none;-webkit-transition:background 1s ease;transition:background 1s ease;}.gnUxyy a{color:#ffffff;}}/*!sc*/
+data-styled.g54[id="sc-cOifOu"]{content:"gnUxyy,"}/*!sc*/
+.jxExRQ img{height:35px;width:35px;cursor:pointer;}/*!sc*/
+@media screen and (min-width:1280px){.jxExRQ{height:45px;text-align:center;width:8rem;}.jxExRQ img{height:45px;width:45px;}}/*!sc*/
+data-styled.g55[id="sc-Arkif"]{content:"jxExRQ,"}/*!sc*/
+.hQhHpX{-webkit-aling-items:center;-webkit-box-aling:center;-ms-flex-aling:center;aling-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-basis:20%;-ms-flex-preferred-size:20%;flex-basis:20%;}/*!sc*/
+data-styled.g56[id="sc-khIgEk"]{content:"hQhHpX,"}/*!sc*/
+.enlJuL{height:100%;width:30px;position:relative;border:none;cursor:pointer;background:none;}/*!sc*/
+.enlJuL:focus{outline:0 none;}/*!sc*/
+.enlJuL img{height:100%;width:100%;object-fit:fill;}/*!sc*/
+data-styled.g57[id="sc-hTRkXV"]{content:"enlJuL,"}/*!sc*/
+.fuJtcf{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;height:85vh;padding:10vh 10vw 0 10vw;position:absolute;top:10vh;left:0;width:100%;}/*!sc*/
+data-styled.g58[id="sc-jgPyTC"]{content:"fuJtcf,"}/*!sc*/
+.kcfsoq{font-size:2.5rem;color:#ffffff;padding:1.5rem 0;}/*!sc*/
+@media screen and (min-width:768px){.kcfsoq{font-size:3rem;padding:2rem 0 1.5rem 0;}}/*!sc*/
+@media screen and (min-width:1024px){.kcfsoq{font-size:4rem;padding:2rem 0;}}/*!sc*/
+@media screen and (min-width:1024px){.kcfsoq{padding:2rem 0 1rem 0;}}/*!sc*/
+data-styled.g59[id="sc-gSYDnn"]{content:"kcfsoq,"}/*!sc*/
+.ljWfRO{color:rgb(243,119,252);}/*!sc*/
+data-styled.g60[id="sc-laZMeE"]{content:"ljWfRO,"}/*!sc*/
+.jdiWPe{color:rgb(112,215,255);}/*!sc*/
+data-styled.g61[id="sc-iNiQyp"]{content:"jdiWPe,"}/*!sc*/
+.gyKPzy{color:#ffffff;line-height:1.8rem;padding:1rem 0;}/*!sc*/
+@media screen and (min-width:768px){.gyKPzy{font-size:1.25rem;line-height:2.2rem;text-align:center;padding:1rem 0;}}/*!sc*/
+@media screen and (min-width:1024px){.gyKPzy{font-size:1.5rem;line-height:2.2rem;text-align:left;padding:2rem 0;}}/*!sc*/
+data-styled.g62[id="sc-jffHpj"]{content:"gyKPzy,"}/*!sc*/
+.jARayQ{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:8rem;height:auto;position:relative;justify-self:end;-webkit-animation:eGLjUR 4s ease-in-out infinite;-moz-animation:eGLjUR 4s ease-in-out infinite;-ms-animation:eGLjUR 4s ease-in-out infinite;-o-animation:eGLjUR 4s ease-in-out infinite;-webkit-animation:eGLjUR 4s ease-in-out infinite;animation:eGLjUR 4s ease-in-out infinite;}/*!sc*/
+data-styled.g63[id="sc-eJocfa"]{content:"jARayQ,"}/*!sc*/
+.OJJCp{height:.25rem;width:2.6rem;background:#ffffff;border-radius:15px;-webkit-transform:translate(-.88rem,11rem) rotate(-45deg);-ms-transform:translate(-.88rem,11rem) rotate(-45deg);transform:translate(-.88rem,11rem) rotate(-45deg);}/*!sc*/
+.OJJCp:before{content:"";top:0;left:0;position:absolute;background:#ffffff;height:.25rem;width:2.6rem;border-radius:15px;-webkit-transform:translate(1.25rem,1.25rem) rotate(90deg);-ms-transform:translate(1.25rem,1.25rem) rotate(90deg);transform:translate(1.25rem,1.25rem) rotate(90deg);}/*!sc*/
+data-styled.g64[id="sc-oeezt"]{content:"OJJCp,"}/*!sc*/
+.iwisNA{background:#ffffff;border-radius:15px;height:.25rem;width:5.5rem;-webkit-transform:translateY(13.5rem) rotate(-90deg);-ms-transform:translateY(13.5rem) rotate(-90deg);transform:translateY(13.5rem) rotate(-90deg);-webkit-animation:swipe-up--body 4s infinite;-moz-animation:swipe-up--body 4s infinite;-ms-animation:swipe-up--body 4s infinite;-o-animation:swipe-up--body 4s infinite;-webkit-animation:swipe-up--body 4s infinite;animation:swipe-up--body 4s infinite;}/*!sc*/
+.iwisNA:before{content:"";bottom:0;left:0;position:absolute;background:#ffffff;height:.25rem;width:1rem;border-radius:15px;-webkit-transform:translateX(-1.5rem);-ms-transform:translateX(-1.5rem);transform:translateX(-1.5rem);}/*!sc*/
+.iwisNA:after{content:"";bottom:0;left:0;position:absolute;background:#ffffff;height:.25rem;width:.5rem;border-radius:30%;-webkit-transform:translateX(-2.5rem);-ms-transform:translateX(-2.5rem);transform:translateX(-2.5rem);}/*!sc*/
+data-styled.g65[id="sc-hhIiOg"]{content:"iwisNA,"}/*!sc*/
+.kKGOwB{color:#ffffff;font-weight:400;-webkit-transform:translateY(6.5rem);-ms-transform:translateY(6.5rem);transform:translateY(6.5rem);}/*!sc*/
+data-styled.g66[id="sc-eirqVv"]{content:"kKGOwB,"}/*!sc*/
+.eDcwcQ{margin:2.5rem 0 0 0;width:100%;z-index:11;}/*!sc*/
+@media screen and (min-width:768px){.eDcwcQ{margin:4rem 0 0 0;width:50%;}}/*!sc*/
+@media screen and (min-width:1280px){.eDcwcQ{width:25%;}}/*!sc*/
+data-styled.g67[id="sc-lbVvki"]{content:"eDcwcQ,"}/*!sc*/
+.dGJRan{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;list-style:none;height:40px;width:auto;}/*!sc*/
+data-styled.g68[id="sc-gGLxEB"]{content:"dGJRan,"}/*!sc*/
+.kVjkXt{height:35px;width:35px;position:relative;}/*!sc*/
+.kVjkXt a{height:35px;width:35px;}/*!sc*/
+.kVjkXt a img{height:100%;width:100%;object-fit:cover;-webkit-filter:invert(90%);filter:invert(90%);}/*!sc*/
+data-styled.g69[id="sc-ckTSus"]{content:"kVjkXt,"}/*!sc*/
+@-webkit-keyframes euUAEi{0%{opacity:0.5;-webkit-transform:scale(0.5);-ms-transform:scale(0.5);transform:scale(0.5);}100%{opacity:0;-webkit-transform:scale(2.75);-ms-transform:scale(2.75);transform:scale(2.75);}}/*!sc*/
+@keyframes euUAEi{0%{opacity:0.5;-webkit-transform:scale(0.5);-ms-transform:scale(0.5);transform:scale(0.5);}100%{opacity:0;-webkit-transform:scale(2.75);-ms-transform:scale(2.75);transform:scale(2.75);}}/*!sc*/
+data-styled.g70[id="sc-keyframes-euUAEi"]{content:"euUAEi,"}/*!sc*/
+@-webkit-keyframes eGLjUR{0%{-webkit-transform:translateY(+2vh);-ms-transform:translateY(+2vh);transform:translateY(+2vh);}50%{-webkit-transform:translateY(-1vh);-ms-transform:translateY(-1vh);transform:translateY(-1vh);}100%{-webkit-transform:translateY(+2vh);-ms-transform:translateY(+2vh);transform:translateY(+2vh);}}/*!sc*/
+@keyframes eGLjUR{0%{-webkit-transform:translateY(+2vh);-ms-transform:translateY(+2vh);transform:translateY(+2vh);}50%{-webkit-transform:translateY(-1vh);-ms-transform:translateY(-1vh);transform:translateY(-1vh);}100%{-webkit-transform:translateY(+2vh);-ms-transform:translateY(+2vh);transform:translateY(+2vh);}}/*!sc*/
+data-styled.g71[id="sc-keyframes-eGLjUR"]{content:"eGLjUR,"}/*!sc*/
+</style><style data-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">@font-face{font-family:'Poppins';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8V1g.woff) format('woff')}@font-face{font-family:'Poppins';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format('woff2');unicode-range:U+0900-097F,U+1CD0-1CF6,U+1CF8-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FB}@font-face{font-family:'Poppins';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Poppins';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style></head><body><div id="__next"><div class="sc-bdnxRM clhKxc"><div class="sc-gtsrHT sc-dlnjwi gfuSqG dJXsSm"></div><div class="sc-gtsrHT sc-eCApnc gfuSqG cRjBZT"></div><div class="sc-gtsrHT sc-hKFxyN gfuSqG kksiKu"></div></div><header class="sc-iBzEeX glZmJR"><nav class="sc-efHYUO cFSLxQ"><div class="sc-cTJkRt lmGFyU"><button id="navbarMenu" type="button" value="Menu" title="Menu" class="sc-jNnpgg jIfccS"><div class="sc-dPaNzc fqbJCS"></div></button></div><ul class="sc-bBjRSN cdTyhF"><li class="sc-cOifOu gnUxyy"><a>Home</a></li><li class="sc-cOifOu gnUxyy"><a href="#about">About</a></li><li class="sc-cOifOu gnUxyy"><a href="#projects">Projects</a></li><li class="sc-Arkif jxExRQ"><a><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDUwMCA1NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgc3Ryb2tlPSIjZmZmIiBmaWxsPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjI1MCIgY3k9Ijc1IiByPSI1MCIvPjxwYXRoIGQ9Im0xMCA3NSAyNDAgNDY1TDQ5MCA3NWgtNTBMMjUwIDQ2MCA2MCA3NUgxMGwyNDAgNDY1Ii8+PHBhdGggZD0ibTExMCAxNDAgMzUgNzBoNjVsNDAgMTkwIDQwLTE5MGg2NWwzNS03MEgxMTBsMjAgNDAiLz48L2c+PC9zdmc+" alt="Navbar Logo" title="Portofolio Logo"/></a></li><li class="sc-cOifOu gnUxyy"><a href="#learning">Learning</a></li><li class="sc-cOifOu gnUxyy"><a href="#imagination">Imagination</a></li><li class="sc-cOifOu gnUxyy"><a href="#gaming">Gaming</a></li></ul><nav class="sc-khIgEk hQhHpX"><button type="button" class="sc-hTRkXV enlJuL"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI0MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGltYWdlIHdpZHRoPSI2NCIgaGVpZ2h0PSI0MiIgaHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFFQUFBQUFxQ0FNQUFBQTAySzNRQUFBQUJHZEJUVUVBQUxHUEMveGhCUUFBQUNCalNGSk4gQUFCNkpnQUFnSVFBQVBvQUFBQ0E2QUFBZFRBQUFPcGdBQUE2bUFBQUYzQ2N1bEU4QUFBQ3lsQk1WRVVBQUFDcXJzL1AwT0xuNSs2NSB1OWRRVmFOQlI1dWVvY25uNXUza21LYktpYUhpZjQvY2k1M09rS20wdHRYUzArVFMwK045Z2JyRG9idmRpSnJoZ3BQS2g1L2ptcWl4IHBzYnc4UEwxdnNQL1VGbjhoSXIyNXVmMTlmWG41KzZBaExwQlI1dWhwTXY0d01QL1MxWDIzTjM5ZEh2L1RGYitWMkQ1dHJxK3dObFQgV2FUMTh2TDZwYXIvVUZyL1RWZjZtcC8xNysvNHZNRCtXbVA4ZTRMMjRlTHE2dStGaWIzMzFkZjliSFQ5YW5MMzA5WGs1ZTMyNmVyNyBpcEQvVTEzNXJyTDE5UFRFeGR4V1c2YjE4UEQ2bktIL1RsajZvNmhOVTZHeXROUDR4Y2orWDJqOWMzdjMyOTNzN1BDTGo4QkNTSnYzIHpjLzlaVzM5Y25uMzJ0dDBlTFRoNGV2MTdlMzdrNW42cEtuSnl0OWFZS2oyN08zN2twai9VbHo1ckxCS1VLQ3NydEQwOVBYM3p0RDkgWm03MzFOYnY3L0tSbGNOQ1NKejR4TWY4ZW9IMjRPRnVjN0xjM2VuMThQSDZuS0w2bTZETnorRmVZNm4yNk9uN2lJLytWbUQ1dGJsSSBUcCtscU0zMDlQVHc4UE9YbXNaRVNwejR1Nzc4Z29scGJhL1kyZWYxOC9QNnBxclMxT1JpWjZ6MjQrVDhmNGIrVzJUNHZzSkdUSjJmIG9zcnk4dlQyM043OWRIeng4dk9kb01sRlM1MzVzYlgrVlY3N2pKTDI2dXBrYUt6VDFPVDVyN1ArVkYzN2lZL1gyT1ptYTY3MjN0LzggZG4zK1lXcjR5TXFZbThieDhmUDI0dVA4ZllUNHZML3o4L1RkM3VuNnFLei9VVnY3bFp2MTd1NWZaS3JPeitMNXViMytXR0w4Z0lmMiA1T1gzMXRqOWJuYjlaMi8zME5LaXBjemw1ZTMyNStqNXNMVDE4Zkg1cWEzMTd1LzVyYkg1cXE3MjYrejR5c3orWW12OWNYbjMyZHYrIFdXTDhmb1g3anBUNXE2LytWRjcrWEdYOGVZRCtYbWY5ZFgzMjNkNzhoSXY2cDZ6NXQ3ditXR0gyNWViM3pNLytaRzM5YlhYNm1xRDYgbnFQOWEzUDlabS8zenRIOWNucjZwS2o3bEpuN2xwdjMydHorWUdqNHhzajdpcEg2bjZUMjRPTDhlb0w0dmNEM3pNNytaR3ozMTluNyBrWmYvVWx2NnFLMytWbC84ZDM3Ly8vOTduWFNVQUFBQUdIUlNUbE1BZ2V2OS9mbjQvUDN6bnVmaXBvenU3dk9hNCtXZzg0YXJkQVh4IEFBQUFBV0pMUjBUdFZyNkRqUUFBQUFsd1NGbHpBQUFPd3dBQURzTUJ4MitvWkFBQUFBZDBTVTFGQitVR0doSVpFenFsL1JJQUFBTk0gU1VSQlZFakg3WmJsUTFSUkVNV3ZZZ2VJdVFKSEx6dTZCbXUzSUs0Z0t0Z0sySzBZb0loQnVBcHJkNE90MkIzWTJOM2QzUjEvaExNUCBoRzFYOEtQemNlN2MzN3Z2dmJubmpCQWlUMTRYVmI3OEJheWlvS3E4aHhMbFZRV3RWL1BuVXhVcVhFUndGUFgwQWxDaG9yUU1iNmhKIENUVzhyUllyVmtDbHlxUXBKa1J4b2lwVm1ZQnExWjBIVks4R0gyME5xbG1ydHF0d3ExT1hxRjU5SmpSbzZDeWdZUU0wYWt6VXBDbFEgUXJqNytqVWo4bSt1WTBTTEFHY0FBUzBRMkRLSVBGcjVBTDd1UXJadWcrQVFvcmJ0bU5DK1E4Yy9BVHAyYUk5T25ZbTZkT1g2TnEybCA0RnhvV0hnM0RYbDBaeUo2OUhRTTZOa0R2WHBycUU5ZlBuRllLQ2VNQU5tdi80Q0JnNGdhRDJiQ2tJaWg5Z0ZESTRaZ0dCOTMrQWhnIFFQOSs4amRBeXNpb2thT0NLQ2c2a0JHalkrd0JZa1pqekZpaWNlTzVLaW95STVjSmtMRng4Y1lQMjdrVHJ5Vk0wTnNDNkNja1lDTC8gc2tuY04vRnhzZEljSUdWaWttRnlEZEwwRG1mRWxLbldnS2xUTUcwNjBZeVp2SjZVbUxVdEd5Qm56WjR6ZHg1UlNEQlh6Rit3MEJ5dyBjTUY4M2FMRlJFdVdBbk5tejVLMkFGSW1wK2lXTFNkYTRjZUlsYXRNQWF0V1l2VWFvclhyZUNVbDJYU1BHVURxVTlkdjJFaFVkeFBYIGJkNlNEZGl5MmJCMUcybTI3d0RXcCtxbGZZQ1VPM2RoOXg2aXZmdU0xeU1MZ0xUOVJBY09jbXJYVG9zTnd0c2lEaDNHa2ExYTdkRjAgVTREZnNjek00VU9XOVFJT0l2c0U5a09vSFVSMEJpRGFVWTJnWE1aL3dMOEE1UG8zNXJxUmJMUXljUHlFVm52eWxDa2dUYXZWcW0yMiBzdlZsQWs2ZklUcDd6dndFRTg4VFhaaG00ekpaWG1mZzFFV2lQcGQwNXRjWmlocGVQcXB6ZUoyVFU0d3Zmb1hvNmdoclFRR0dYU082IGZzTytvTENrQVY0M0ZkVzFKV2xRSEdIYkxZTWRTVXRNNG9mY3ZzT3FlOWVlcUFMMzdoTTlTTE1scWl6clFQMTZpdW82a0hVRVBtVDcgZURUU1N0WWpvd0JkYzM5RmRSMGFDekQ0TWRHVHArYkd3dFlHdEh1bXFPNGZyUTArenoxSTh5TGN4TnBDd3pLekwzYzRZNjdBSzM3VyA2emUvelpYdFBlTmNyTHBPMmp0MEovaHQzL29wOXU3dW0vbGwzcVU3UDJBQTd6K3dmWHcwRGhodXdLZlBSUHUvL04ySUExU3RZclNQIEVzSzExMWNOZmZ0dStOc2hpM3ZPaytoSFNTRkthZWpuNnB5TWVjYXVMMjBjRk11VXplR2c2WkszbkJDL0FDS3o3TUIyT2NDV0FBQUEgSlhSRldIUmtZWFJsT21OeVpXRjBaUUF5TURJeExUQTJMVEkyVkRFNE9qSTFPakU1S3pBd09qQXdJYjcxMFFBQUFDVjBSVmgwWkdGMCBaVHB0YjJScFpua0FNakF5TVMwd05pMHlObFF4T0RveU5Ub3hPU3N3TURvd01GRGpUVzBBQUFBQVNVVk9SSzVDWUlJPSIvPjwvc3ZnPg==" alt="Portofolio language switcher" title="en"/></button></nav></nav><div class="sc-jgPyTC fuJtcf"><h1 class="sc-gSYDnn kcfsoq"><span class="sc-laZMeE ljWfRO">Void</span>To<span class="sc-iNiQyp jdiWPe">Infinite</span></h1><p class="sc-jffHpj gyKPzy">Currently your present is your future, only your future must continue to define it.</p><div class="sc-lbVvki eDcwcQ"><ul class="sc-gGLxEB dGJRan"><li class="sc-ckTSus kVjkXt"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCiwOQZ1HOJMepxwlvgFVBqg"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY4MnB0IiB2aWV3Qm94PSItMjEgLTExNyA2ODIuNjY3IDY4MiIgd2lkdGg9IjY4MnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02MjYuODEzIDY0LjAzNWMtNy4zNzUtMjcuNDE4LTI4Ljk5My00OS4wMzEtNTYuNDA3LTU2LjQxNEM1MjAuMzI0LTYuMDgyIDMxOS45OTItNi4wODIgMzE5Ljk5Mi02LjA4MnMtMjAwLjMyNCAwLTI1MC40MDYgMTMuMTg0Yy0yNi44ODcgNy4zNzUtNDkuMDMxIDI5LjUyLTU2LjQwNiA1Ni45MzNDMCAxMTQuMTEzIDAgMjE3Ljk3IDAgMjE3Ljk3czAgMTA0LjM3OSAxMy4xOCAxNTMuOTMzYzcuMzgyIDI3LjQxNCAyOC45OTIgNDkuMDI4IDU2LjQxIDU2LjQxQzEyMC4xOTUgNDQyLjAyIDMyMCA0NDIuMDIgMzIwIDQ0Mi4wMnMyMDAuMzI0IDAgMjUwLjQwNi0xMy4xODRjMjcuNDE4LTcuMzc5IDQ5LjAzMi0yOC45OTIgNTYuNDE0LTU2LjQwNiAxMy4xNzYtNTAuMDgyIDEzLjE3Ni0xNTMuOTM0IDEzLjE3Ni0xNTMuOTM0cy41MjctMTA0LjM4My0xMy4xODMtMTU0LjQ2ek0yNTYuMjEgMzEzLjkxNVYxMjIuMDIybDE2Ni41ODYgOTUuOTQ2em0wIDAiLz48L3N2Zz4=" alt="Youtube Social" title="Youtube"/></a></li><li class="sc-ckTSus kVjkXt"><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/CuGhqdG3g3"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNDg0LjYyOSAyMjUuMDU4Yy0yMC4zNzktNzAuMDE4LTQzLjM2MS0xMDYuMTk2LTQzLjczMi0xMDYuODQ1LTEuMzEtMS41OTktMzMuNzg2LTQwLjQ2My0xMTIuMDU5LTY5LjIwOWwtMTAuMzQzIDI4LjE2YzM3LjIzNyAxMy42NzYgNjMuNjU1IDMwLjM2IDc4LjE4NCA0MS4xNEMzNTMuMzAzIDEwNS4zNTEgMzAxLjcwMiA5Ny40MTggMjU2IDk3LjQxOHMtOTcuMzAzIDcuOTMzLTE0MC42NzkgMjAuODg2YzE0LjUyOC0xMC43NzkgNDAuOTQ2LTI3LjQ2NCA3OC4xODMtNDEuMTRsLTEwLjM0My0yOC4xNkMxMDQuODkgNzcuNzUgNzIuNDE0IDExNi42MTQgNzEuMTA0IDExOC4yMTNjLS4zNzEuNjQ5LTIzLjM1NCAzNi44MjctNDMuNzMyIDEwNi44NDVDNy43MzIgMjkyLjUzNC4yNzEgMzg3LjcyMyAwIDM5MS41NGMxLjc1IDIuNzM2IDQyIDcxLjQ1NiAxNTEuNjkzIDcxLjQ1NmwyNy44MDQtNDAuMjYyYy0zMS4xNS04LjI3MS02MC44NTMtMjEuNjA5LTg4LjA0My0zOS43MDhsMTYuNjIzLTI0Ljk3M2M0My44NjUgMjkuMTk3IDk1LjAxNiA0NC42MzEgMTQ3LjkyMyA0NC42MzFzMTA0LjA1OC0xNS40MzQgMTQ3LjkyMy00NC42MzFsMTYuNjIzIDI0Ljk3M2MtMjcuMTg5IDE4LjA5OS01Ni44OTMgMzEuNDM3LTg4LjA0MyAzOS43MDhsMjcuODA0IDQwLjI2MkM0NzAgNDYyLjk5NiA1MTAuMjUgMzk0LjI3NiA1MTIgMzkxLjU0Yy0uMjcxLTMuODE3LTcuNzMyLTk5LjAwNi0yNy4zNzEtMTY2LjQ4MnpNMTg2LjY0MiAzMDMuNTRoLTMwdi01MGgzMHptMTY4LjcxNiAwaC0zMHYtNTBoMzB6Ii8+PC9zdmc+" alt="Discord Social" title="Discord"/></a></li><li class="sc-ckTSus kVjkXt"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/voidtoinfinite/"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpb25pY29uIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZD0iTTM0OS4zMyA2OS4zM2E5My42MiA5My42MiAwIDAgMSA5My4zNCA5My4zNHYxODYuNjZhOTMuNjIgOTMuNjIgMCAwIDEtOTMuMzQgOTMuMzRIMTYyLjY3YTkzLjYyIDkzLjYyIDAgMCAxLTkzLjM0LTkzLjM0VjE2Mi42N2E5My42MiA5My42MiAwIDAgMSA5My4zNC05My4zNGgxODYuNjZtMC0zNy4zM0gxNjIuNjdDOTAuOCAzMiAzMiA5MC44IDMyIDE2Mi42N3YxODYuNjZDMzIgNDIxLjIgOTAuOCA0ODAgMTYyLjY3IDQ4MGgxODYuNjZDNDIxLjIgNDgwIDQ4MCA0MjEuMiA0ODAgMzQ5LjMzVjE2Mi42N0M0ODAgOTAuOCA0MjEuMiAzMiAzNDkuMzMgMzJ6Ii8+PHBhdGggZD0iTTM3Ny4zMyAxNjIuNjdhMjggMjggMCAxIDEgMjgtMjggMjcuOTQgMjcuOTQgMCAwIDEtMjggMjh6TTI1NiAxODEuMzNBNzQuNjcgNzQuNjcgMCAxIDEgMTgxLjMzIDI1NiA3NC43NSA3NC43NSAwIDAgMSAyNTYgMTgxLjMzbTAtMzcuMzNhMTEyIDExMiAwIDEgMCAxMTIgMTEyIDExMiAxMTIgMCAwIDAtMTEyLTExMnoiLz48L3N2Zz4=" alt="Instagram Social" title="Instagram"/></a></li><li class="sc-ckTSus kVjkXt"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/VoidToInfinite"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNNTEyIDk3LjI0OGMtMTkuMDQgOC4zNTItMzkuMzI4IDEzLjg4OC02MC40OCAxNi41NzYgMjEuNzYtMTIuOTkyIDM4LjM2OC0zMy40MDggNDYuMTc2LTU4LjAxNi0yMC4yODggMTIuMDk2LTQyLjY4OCAyMC42NC02Ni41NiAyNS40MDhDNDExLjg3MiA2MC43MDQgMzg0LjQxNiA0OCAzNTQuNDY0IDQ4Yy01OC4xMTIgMC0xMDQuODk2IDQ3LjE2OC0xMDQuODk2IDEwNC45OTIgMCA4LjMyLjcwNCAxNi4zMiAyLjQzMiAyMy45MzYtODcuMjY0LTQuMjU2LTE2NC40OC00Ni4wOC0yMTYuMzUyLTEwOS43OTItOS4wNTYgMTUuNzEyLTE0LjM2OCAzMy42OTYtMTQuMzY4IDUzLjA1NiAwIDM2LjM1MiAxOC43MiA2OC41NzYgNDYuNjI0IDg3LjIzMi0xNi44NjQtLjMyLTMzLjQwOC01LjIxNi00Ny40MjQtMTIuOTI4djEuMTUyYzAgNTEuMDA4IDM2LjM4NCA5My4zNzYgODQuMDk2IDEwMy4xMzYtOC41NDQgMi4zMzYtMTcuODU2IDMuNDU2LTI3LjUyIDMuNDU2LTYuNzIgMC0xMy41MDQtLjM4NC0xOS44NzItMS43OTIgMTMuNiA0MS41NjggNTIuMTkyIDcyLjEyOCA5OC4wOCA3My4xMi0zNS43MTIgMjcuOTM2LTgxLjA1NiA0NC43NjgtMTMwLjE0NCA0NC43NjgtOC42MDggMC0xNi44NjQtLjM4NC0yNS4xMi0xLjQ0QzQ2LjQ5NiA0NDYuODggMTAxLjYgNDY0IDE2MS4wMjQgNDY0YzE5My4xNTIgMCAyOTguNzUyLTE2MCAyOTguNzUyLTI5OC42ODggMC00LjY0LS4xNi05LjEyLS4zODQtMTMuNTY4IDIwLjgzMi0xNC43ODQgMzguMzM2LTMzLjI0OCA1Mi42MDgtNTQuNDk2eiIvPjwvc3ZnPg==" alt="Twitter Social" title="Twitter"/></a></li></ul></div><div class="sc-eJocfa jARayQ"><div class="sc-oeezt OJJCp"></div><div class="sc-hhIiOg iwisNA"></div><p class="sc-eirqVv kKGOwB">Get Started</p></div></div></header><main><section id="about" class="sc-ksluID bVRKfj"><div class="sc-fnVZcZ jGYPdx"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQ1MCIgdmlld0JveD0iMCAwIDUwMCA1NTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgc3Ryb2tlPSIjZmZmIiBmaWxsPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjI1MCIgY3k9Ijc1IiByPSI1MCIvPjxwYXRoIGQ9Im0xMCA3NSAyNDAgNDY1TDQ5MCA3NWgtNTBMMjUwIDQ2MCA2MCA3NUgxMGwyNDAgNDY1Ii8+PHBhdGggZD0ibTExMCAxNDAgMzUgNzBoNjVsNDAgMTkwIDQwLTE5MGg2NWwzNS03MEgxMTBsMjAgNDAiLz48L2c+PC9zdmc+" alt="About Logo" title="VoidToInfinite Logo"/></div><div class="sc-hBMUJo lmXYQU"><h2 class="sc-fFSPTT cRSzHN">About</h2><hr class="sc-iemWCZ erqzKx"/><p class="sc-bkbkJK oBYmt">We&#x27;re a team with members in different types of fields with the idea of growing together by sharing knowledge and creating projects.<br/><br/>At the moment, we only have our Discord server. You can also follow our GitHub projects.</p></div></section><div id="projects" class="sc-dIvrsQ biCrYn"><h2 class="sc-dlMDgC dTvIVy">Projects</h2><hr class="sc-hHEiqL kqkDzL"/><div class="sc-kfYoZR lpaEYv"><div class="sc-fKgJPI cdXrcq"><div class="sc-bCwfaz dDstpo"><img src="/_next/static/images/card1-6649a3f44185a79eac702ec83f7383da.svg" alt="Card image" title="Random number"/></div><div class="sc-iwajpm kydRHc"><div class="sc-cxNHIi fHUQtx"><p class="sc-ezzafa gJshgS">Interactive</p><h3 class="sc-giAqHp iHJYFU">Random number</h3></div><div class="sc-lmgQwP hpRDUw"><p class="sc-bYwzuL bsumis">Genera un numero aleatorio entre dos valores.</p></div><div class="sc-iJCRrE bOBkoa"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite">Show more</a><div class="sc-kLojOw iehvjW"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNMjU1Ljk2OCA1LjMyOUMxMTQuNjI0IDUuMzI5IDAgMTIwLjQwMSAwIDI2Mi4zNTNjMCAxMTMuNTM2IDczLjM0NCAyMDkuODU2IDE3NS4xMDQgMjQzLjg3MiAxMi44IDIuMzY4IDE3LjQ3Mi01LjU2OCAxNy40NzItMTIuMzg0IDAtNi4xMTItLjIyNC0yMi4yNzItLjM1Mi00My43MTItNzEuMiAxNS41Mi04Ni4yNC0zNC40NjQtODYuMjQtMzQuNDY0LTExLjYxNi0yOS42OTYtMjguNDE2LTM3LjYtMjguNDE2LTM3LjYtMjMuMjY0LTE1LjkzNiAxLjcyOC0xNS42MTYgMS43MjgtMTUuNjE2IDI1LjY5NiAxLjgyNCAzOS4yIDI2LjQ5NiAzOS4yIDI2LjQ5NiAyMi44NDggMzkuMjY0IDU5LjkzNiAyNy45MzYgNzQuNTI4IDIxLjM0NCAyLjMwNC0xNi42MDggOC45MjgtMjcuOTM2IDE2LjI1Ni0zNC4zNjgtNTYuODMyLTYuNDk2LTExNi42MDgtMjguNTQ0LTExNi42MDgtMTI3LjAwOCAwLTI4LjA2NCA5Ljk4NC01MS4wMDggMjYuMzY4LTY4Ljk5Mi0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQgMi40OTYtNjggMCAwIDIxLjUwNC02LjkxMiA3MC40IDI2LjMzNiAyMC40MTYtNS42OTYgNDIuMzA0LTguNTQ0IDY0LjA5Ni04LjY0IDIxLjcyOC4xMjggNDMuNjQ4IDIuOTQ0IDY0LjA5NiA4LjY3MiA0OC44NjQtMzMuMjQ4IDcwLjMzNi0yNi4zMzYgNzAuMzM2LTI2LjMzNiAxMy45NTIgMzUuMzkyIDUuMTg0IDYxLjUwNCAyLjU2IDY4IDE2LjQxNiAxNy45ODQgMjYuMzA0IDQwLjkyOCAyNi4zMDQgNjguOTkyIDAgOTguNzItNTkuODQgMTIwLjQ0OC0xMTYuODY0IDEyNi44MTYgOS4xODQgNy45MzYgMTcuMzc2IDIzLjYxNiAxNy4zNzYgNDcuNTg0IDAgMzQuMzY4LS4zMiA2Mi4wOC0uMzIgNzAuNDk2IDAgNi44OCA0LjYwOCAxNC44OCAxNy42IDEyLjM1MkM0MzguNzIgNDcyLjE0NSA1MTIgMzc1Ljg1NyA1MTIgMjYyLjM1MyA1MTIgMTIwLjQwMSAzOTcuMzc2IDUuMzI5IDI1NS45NjggNS4zMjl6Ii8+PC9zdmc+" alt="Github image" title="Source Code"/></a></div></div></div></div><div class="sc-fKgJPI cdXrcq"><div class="sc-bCwfaz dDstpo"><img src="/_next/static/images/card2-2911d3771472a77408022e35e38f5986.svg" alt="Card image" title="Word Counter"/></div><div class="sc-iwajpm kydRHc"><div class="sc-cxNHIi fHUQtx"><p class="sc-ezzafa gJshgS">Interactive</p><h3 class="sc-giAqHp iHJYFU">Word Counter</h3></div><div class="sc-lmgQwP hpRDUw"><p class="sc-bYwzuL bsumis">Muestra el numero total de palabras escritas.</p></div><div class="sc-iJCRrE bOBkoa"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite">Show more</a><div class="sc-kLojOw iehvjW"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNMjU1Ljk2OCA1LjMyOUMxMTQuNjI0IDUuMzI5IDAgMTIwLjQwMSAwIDI2Mi4zNTNjMCAxMTMuNTM2IDczLjM0NCAyMDkuODU2IDE3NS4xMDQgMjQzLjg3MiAxMi44IDIuMzY4IDE3LjQ3Mi01LjU2OCAxNy40NzItMTIuMzg0IDAtNi4xMTItLjIyNC0yMi4yNzItLjM1Mi00My43MTItNzEuMiAxNS41Mi04Ni4yNC0zNC40NjQtODYuMjQtMzQuNDY0LTExLjYxNi0yOS42OTYtMjguNDE2LTM3LjYtMjguNDE2LTM3LjYtMjMuMjY0LTE1LjkzNiAxLjcyOC0xNS42MTYgMS43MjgtMTUuNjE2IDI1LjY5NiAxLjgyNCAzOS4yIDI2LjQ5NiAzOS4yIDI2LjQ5NiAyMi44NDggMzkuMjY0IDU5LjkzNiAyNy45MzYgNzQuNTI4IDIxLjM0NCAyLjMwNC0xNi42MDggOC45MjgtMjcuOTM2IDE2LjI1Ni0zNC4zNjgtNTYuODMyLTYuNDk2LTExNi42MDgtMjguNTQ0LTExNi42MDgtMTI3LjAwOCAwLTI4LjA2NCA5Ljk4NC01MS4wMDggMjYuMzY4LTY4Ljk5Mi0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQgMi40OTYtNjggMCAwIDIxLjUwNC02LjkxMiA3MC40IDI2LjMzNiAyMC40MTYtNS42OTYgNDIuMzA0LTguNTQ0IDY0LjA5Ni04LjY0IDIxLjcyOC4xMjggNDMuNjQ4IDIuOTQ0IDY0LjA5NiA4LjY3MiA0OC44NjQtMzMuMjQ4IDcwLjMzNi0yNi4zMzYgNzAuMzM2LTI2LjMzNiAxMy45NTIgMzUuMzkyIDUuMTg0IDYxLjUwNCAyLjU2IDY4IDE2LjQxNiAxNy45ODQgMjYuMzA0IDQwLjkyOCAyNi4zMDQgNjguOTkyIDAgOTguNzItNTkuODQgMTIwLjQ0OC0xMTYuODY0IDEyNi44MTYgOS4xODQgNy45MzYgMTcuMzc2IDIzLjYxNiAxNy4zNzYgNDcuNTg0IDAgMzQuMzY4LS4zMiA2Mi4wOC0uMzIgNzAuNDk2IDAgNi44OCA0LjYwOCAxNC44OCAxNy42IDEyLjM1MkM0MzguNzIgNDcyLjE0NSA1MTIgMzc1Ljg1NyA1MTIgMjYyLjM1MyA1MTIgMTIwLjQwMSAzOTcuMzc2IDUuMzI5IDI1NS45NjggNS4zMjl6Ii8+PC9zdmc+" alt="Github image" title="Source Code"/></a></div></div></div></div><div class="sc-fKgJPI cdXrcq"><div class="sc-bCwfaz dDstpo"><img src="/_next/static/images/card3-86b5c315abf7c820c281b47607e57560.svg" alt="Card image" title="Age Calculator"/></div><div class="sc-iwajpm kydRHc"><div class="sc-cxNHIi fHUQtx"><p class="sc-ezzafa gJshgS">Interactive</p><h3 class="sc-giAqHp iHJYFU">Age Calculator</h3></div><div class="sc-lmgQwP hpRDUw"><p class="sc-bYwzuL bsumis">Calcula cuanto tiempo ha transcurrido entre dos fechas.</p></div><div class="sc-iJCRrE bOBkoa"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite">Show more</a><div class="sc-kLojOw iehvjW"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNMjU1Ljk2OCA1LjMyOUMxMTQuNjI0IDUuMzI5IDAgMTIwLjQwMSAwIDI2Mi4zNTNjMCAxMTMuNTM2IDczLjM0NCAyMDkuODU2IDE3NS4xMDQgMjQzLjg3MiAxMi44IDIuMzY4IDE3LjQ3Mi01LjU2OCAxNy40NzItMTIuMzg0IDAtNi4xMTItLjIyNC0yMi4yNzItLjM1Mi00My43MTItNzEuMiAxNS41Mi04Ni4yNC0zNC40NjQtODYuMjQtMzQuNDY0LTExLjYxNi0yOS42OTYtMjguNDE2LTM3LjYtMjguNDE2LTM3LjYtMjMuMjY0LTE1LjkzNiAxLjcyOC0xNS42MTYgMS43MjgtMTUuNjE2IDI1LjY5NiAxLjgyNCAzOS4yIDI2LjQ5NiAzOS4yIDI2LjQ5NiAyMi44NDggMzkuMjY0IDU5LjkzNiAyNy45MzYgNzQuNTI4IDIxLjM0NCAyLjMwNC0xNi42MDggOC45MjgtMjcuOTM2IDE2LjI1Ni0zNC4zNjgtNTYuODMyLTYuNDk2LTExNi42MDgtMjguNTQ0LTExNi42MDgtMTI3LjAwOCAwLTI4LjA2NCA5Ljk4NC01MS4wMDggMjYuMzY4LTY4Ljk5Mi0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQgMi40OTYtNjggMCAwIDIxLjUwNC02LjkxMiA3MC40IDI2LjMzNiAyMC40MTYtNS42OTYgNDIuMzA0LTguNTQ0IDY0LjA5Ni04LjY0IDIxLjcyOC4xMjggNDMuNjQ4IDIuOTQ0IDY0LjA5NiA4LjY3MiA0OC44NjQtMzMuMjQ4IDcwLjMzNi0yNi4zMzYgNzAuMzM2LTI2LjMzNiAxMy45NTIgMzUuMzkyIDUuMTg0IDYxLjUwNCAyLjU2IDY4IDE2LjQxNiAxNy45ODQgMjYuMzA0IDQwLjkyOCAyNi4zMDQgNjguOTkyIDAgOTguNzItNTkuODQgMTIwLjQ0OC0xMTYuODY0IDEyNi44MTYgOS4xODQgNy45MzYgMTcuMzc2IDIzLjYxNiAxNy4zNzYgNDcuNTg0IDAgMzQuMzY4LS4zMiA2Mi4wOC0uMzIgNzAuNDk2IDAgNi44OCA0LjYwOCAxNC44OCAxNy42IDEyLjM1MkM0MzguNzIgNDcyLjE0NSA1MTIgMzc1Ljg1NyA1MTIgMjYyLjM1MyA1MTIgMTIwLjQwMSAzOTcuMzc2IDUuMzI5IDI1NS45NjggNS4zMjl6Ii8+PC9zdmc+" alt="Github image" title="Source Code"/></a></div></div></div></div><div class="sc-fKgJPI cdXrcq"><div class="sc-bCwfaz dDstpo"><img src="/_next/static/images/card4-b9cfd4e6949f359b28c4c442e75fdb55.svg" alt="Card image" title="BMI Calculator"/></div><div class="sc-iwajpm kydRHc"><div class="sc-cxNHIi fHUQtx"><p class="sc-ezzafa gJshgS">Interactive</p><h3 class="sc-giAqHp iHJYFU">BMI Calculator</h3></div><div class="sc-lmgQwP hpRDUw"><p class="sc-bYwzuL bsumis">Calcula si estas en un peso saludable.</p></div><div class="sc-iJCRrE bOBkoa"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite">Show more</a><div class="sc-kLojOw iehvjW"><a target="_blank" rel="noopener noreferrer" href="https://github.com/VoidToInfinite"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNMjU1Ljk2OCA1LjMyOUMxMTQuNjI0IDUuMzI5IDAgMTIwLjQwMSAwIDI2Mi4zNTNjMCAxMTMuNTM2IDczLjM0NCAyMDkuODU2IDE3NS4xMDQgMjQzLjg3MiAxMi44IDIuMzY4IDE3LjQ3Mi01LjU2OCAxNy40NzItMTIuMzg0IDAtNi4xMTItLjIyNC0yMi4yNzItLjM1Mi00My43MTItNzEuMiAxNS41Mi04Ni4yNC0zNC40NjQtODYuMjQtMzQuNDY0LTExLjYxNi0yOS42OTYtMjguNDE2LTM3LjYtMjguNDE2LTM3LjYtMjMuMjY0LTE1LjkzNiAxLjcyOC0xNS42MTYgMS43MjgtMTUuNjE2IDI1LjY5NiAxLjgyNCAzOS4yIDI2LjQ5NiAzOS4yIDI2LjQ5NiAyMi44NDggMzkuMjY0IDU5LjkzNiAyNy45MzYgNzQuNTI4IDIxLjM0NCAyLjMwNC0xNi42MDggOC45MjgtMjcuOTM2IDE2LjI1Ni0zNC4zNjgtNTYuODMyLTYuNDk2LTExNi42MDgtMjguNTQ0LTExNi42MDgtMTI3LjAwOCAwLTI4LjA2NCA5Ljk4NC01MS4wMDggMjYuMzY4LTY4Ljk5Mi0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQgMi40OTYtNjggMCAwIDIxLjUwNC02LjkxMiA3MC40IDI2LjMzNiAyMC40MTYtNS42OTYgNDIuMzA0LTguNTQ0IDY0LjA5Ni04LjY0IDIxLjcyOC4xMjggNDMuNjQ4IDIuOTQ0IDY0LjA5NiA4LjY3MiA0OC44NjQtMzMuMjQ4IDcwLjMzNi0yNi4zMzYgNzAuMzM2LTI2LjMzNiAxMy45NTIgMzUuMzkyIDUuMTg0IDYxLjUwNCAyLjU2IDY4IDE2LjQxNiAxNy45ODQgMjYuMzA0IDQwLjkyOCAyNi4zMDQgNjguOTkyIDAgOTguNzItNTkuODQgMTIwLjQ0OC0xMTYuODY0IDEyNi44MTYgOS4xODQgNy45MzYgMTcuMzc2IDIzLjYxNiAxNy4zNzYgNDcuNTg0IDAgMzQuMzY4LS4zMiA2Mi4wOC0uMzIgNzAuNDk2IDAgNi44OCA0LjYwOCAxNC44OCAxNy42IDEyLjM1MkM0MzguNzIgNDcyLjE0NSA1MTIgMzc1Ljg1NyA1MTIgMjYyLjM1MyA1MTIgMTIwLjQwMSAzOTcuMzc2IDUuMzI5IDI1NS45NjggNS4zMjl6Ii8+PC9zdmc+" alt="Github image" title="Source Code"/></a></div></div></div></div></div></div><div class="sc-jSFjdj jcTaHb"><section id="learning" class="sc-gKAaRy sc-pNWdM cnXuZQ XJxhY"><div class="sc-iCoGMd bdrRuQ"><img src="/_next/static/images/learning-83662a5645a1382380f930b450b52f4f.svg" alt="Learning image" title="Learning"/></div><div class="sc-fujyAs hQgXWd"><h2 class="sc-crzoAE gctmIo">Learning</h2><p class="sc-dIsUp loIyyn">Increase your knowledge</p><div class="sc-iqAclL IaAPU"></div><p class="sc-bqGGPW eNQtkq">Get to know new methods and ways to carry your projects to make them come true, improve your weakness points and strengthen it with the help of experienced people or people that are learning, is more fun.</p></div></section><section id="imagination" class="sc-gKAaRy sc-jrsJWt cnXuZQ brxOqd"><div class="sc-iCoGMd bdrRuQ"><img src="/_next/static/images/imagination-64e2f06c732556987662085b3bd989e4.svg" alt="Imagination image" title="Imagination"/></div><div class="sc-fujyAs hQgXWd"><h2 class="sc-crzoAE gctmIo">Imagination</h2><p class="sc-dIsUp loIyyn">Light up your creativity</p><div class="sc-iqAclL IaAPU"></div><p class="sc-bqGGPW eNQtkq">Imagine whichever creative concept taken from within you expresing emotions, spawning new sensations and visualising the message, it&#x27;s something unique.</p></div></section><section id="gaming" class="sc-gKAaRy sc-kEqXSa cnXuZQ bAVzgZ"><div class="sc-iCoGMd bdrRuQ"><img src="/_next/static/images/gaming-fef5adabf50c534d11faf80bd077f444.svg" alt="Gaming image" title="Gaming"/></div><div class="sc-fujyAs hQgXWd"><h2 class="sc-crzoAE gctmIo">Gaming</h2><p class="sc-dIsUp loIyyn">Good luck! Have fun!</p><div class="sc-iqAclL IaAPU"></div><p class="sc-bqGGPW eNQtkq">Having fun with friends? Absolutely!<br/>We are all aware that we can learn by playing and that&#x27;s a fact.</p></div></section></div></main><footer class="sc-iklJeh jAZWcj"><div class="sc-jJMGnK sc-hiKfDv iHxKCD dRsyqq"><h3 class="sc-ciSkZP blYsdO">Navigation</h3><hr class="sc-jcwpoC fowaYY"/><ul><li><a>Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#learning">Learning</a></li><li><a href="#imagination">Imagination</a></li><li><a href="#gaming">Gaming</a></li></ul></div><div class="sc-jJMGnK sc-gXfVKN iHxKCD elXAzt"><h3 class="sc-ciSkZP blYsdO">People</h3><hr class="sc-jcwpoC fowaYY"/><ul><li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/spectreisback/">Spectre</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/demosquerag/">D3M6</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_.mosart._/">Mosart</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/michaelddesign_/">Michael D. Design</a></li></ul></div><div class="sc-jJMGnK sc-cBoqAE iHxKCD iBHoo"><h3 class="sc-ciSkZP blYsdO">Socials</h3><hr class="sc-jcwpoC fowaYY"/><ul><li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCiwOQZ1HOJMepxwlvgFVBqg">Youtube</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/CuGhqdG3g3">Discord</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/voidtoinfinite/">Instagram</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/VoidToInfinite">Twitter</a></li></ul></div><p class="sc-carFqZ htVHao">VoidToInfinite © 2021</p></footer></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"DfdYp_gzXhk1Z_QIFtbxv","nextExport":true,"autoExport":true,"isFallback":false,"dynamicIds":[327,1455,6137,5151,1316],"scriptLoader":[]}</script></body></html>

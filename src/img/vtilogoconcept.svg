@@ -1,9 +1,0 @@
-<svg class="logo-vti-svg" width="400" height="450" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <g>
-        <circle class="logo-vti-dot" cx="200" cy="75" r="50" stroke="white" fill="transparent" stroke-width="2"/>
-        <polyline class="logo-vti-void" stroke="white" fill="transparent" stroke-width="2" 
-            points="10,75 200,440 390,75 340,75 200,360 60,75 10,75 200,440"/>
-        <polyline class="logo-vti-to" stroke="orange" fill="transparent" stroke-width="2" 
-            points="110,140 130,180 180,180 200,330 220,180 270,180 290,140 110,140 130,180"/>
-    </g>
-</svg>
