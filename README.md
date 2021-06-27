@@ -9,7 +9,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/VoidToInfinite/voidtoinfinite.github.io">
+  <a href="https://github.com/VoidToInfinite">
     <img src="images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -38,7 +38,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://github.com/VoidToInfinite/voidtoinfinite.github.io/blob/main/images/logo.svg)
+[![Product Name Screen Shot][product-screenshot]](https://voidtoinfinite.github.io)
 
 We're a team with members in different types of fields with the idea of growing together by sharing knowledge and creating projects.
 
@@ -50,4 +50,4 @@ This section should list any major frameworks that you built your project using.
 * [React](https://create-react-app.dev)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: images/logo.svg
+[product-screenshot]: images/web-edit.jpg
