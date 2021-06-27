@@ -50,4 +50,4 @@ This section should list any major frameworks that you built your project using.
 * [React](https://create-react-app.dev)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: images/web-edit.jpg
+[product-screenshot]: 
