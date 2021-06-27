@@ -43,6 +43,7 @@
 We're a team with members in different types of fields with the idea of growing together by sharing knowledge and creating projects.
 
 <br />
+
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
@@ -50,4 +51,4 @@ This section should list any major frameworks that you built your project using.
 * [React](https://create-react-app.dev)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: 
+[product-screenshot]: images/logo.svg
