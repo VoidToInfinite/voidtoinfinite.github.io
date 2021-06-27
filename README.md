@@ -38,9 +38,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<div align="center">
+  [![Product Name Screen Shot][product-screenshot]](https://github.com/VoidToInfinite/voidtoinfinite.github.io/blob/main/images/logo.svg)
+</div>
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/VoidToInfinite/voidtoinfinite.github.io/blob/main/images/logo.svg)
-# voidtoinfinite.github.io
+We're a team with members in different types of fields with the idea of growing together by sharing knowledge and creating projects.
 
 ### Built With
 
